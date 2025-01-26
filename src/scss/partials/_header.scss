@@ -1,0 +1,28 @@
+.App-header {
+    .contact-row .col,
+    .main-header .navbar {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    .contact-row .col {
+        gap: 19px;
+        height: 45px;
+
+        .contact-icon {
+            max-width: 22px;
+        }
+
+        .contact-phone {
+            gap: 1px;
+        }
+
+        .contact-mail {
+            gap: 5px;
+        }
+    }
+
+    .main-header {
+        height: 135px;
+    }
+}
