@@ -1,12 +1,13 @@
 import phoneIcon from '../images/icons/phone.svg';
 import mailIcon from '../images/icons/mail.svg';
 import logo from '../images/logo.svg';
+import mobileMenuIcon from '../images/icons/mobile-menu.svg';
 
 function PageHeader() {
     return (
         <header className="App-header">
             <div className="row contact-row">
-                <div className="col d-flex justify-content-center justify-content-lg-end align-items-center">
+                <div className="col d-flex justify-content-center justify-content-lg-end align-items-center mx-auto">
                     <a href="tel:(801) 872-9889" className="poppins-medium font-14 text-black text-decoration-none d-flex align-items-center contact-phone">
                         <img src={phoneIcon} className="phone-icon contact-icon" alt="phone icon" />
                         <span>(801) 872-9889</span>
@@ -18,27 +19,43 @@ function PageHeader() {
                 </div>
             </div>
             <div className="row main-header bg-dark">
-                <nav class="navbar navbar-expand-lg">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="/home">
-                            <img src={logo} className="app-logo" alt="J.G.Miller Logo" />
+                <nav className="navbar navbar-dark bg-dark navbar-expand-lg mx-auto">
+                    <div className="container-fluid">
+                        <a className="navbar-brand" href="#">
+                            <img src={logo} className="header-logo" alt="J.G.Miller header logo" />
                         </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav-toggle" aria-controls="main-nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                        <button className="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon w-auto h-auto">
+                                <img src={mobileMenuIcon} className="mobile-menu-icon" alt="Mobile menu image" />
+                            </span>
                         </button>
-                        <div class="collapse navbar-collapse ms-auto" id="main-nav-toggle">
-                            <ul class="navbar-nav mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Link</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                                </li>
-                            </ul>
-                            <a href="#contact-us" className="btn btn-sm btn-primary">Book a free consultation</a>
+                        <div className="offcanvas offcanvas-end border-start-0 text-bg-dark" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <div className="offcanvas-header border-bottom">
+                                <img src={logo} className="header-logo" alt="J.G.Miller header logo" />
+                                <button type="button" className="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div className="offcanvas-body align-items-center">
+                                <ul className="navbar-nav justify-content-end flex-grow-1 poppins-regular">
+                                    <li className="nav-item">
+                                        <a className="nav-link active poppins-bold" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li className="nav-item">
+                                        <a className="nav-link" href="#">Services</a>
+                                    </li>
+                                    <li className="nav-item">
+                                        <a className="nav-link" href="#">About us</a>
+                                    </li>
+                                    <li className="nav-item">
+                                        <a className="nav-link" href="#">Contact</a>
+                                    </li>
+                                    <li className="nav-item">
+                                        <a className="nav-link" href="#">Blog</a>
+                                    </li>
+                                </ul>
+                                <a href="#" className="btn btn-primary text-white cta header-cta poppins-medium border-0 rounded-pill" alt="Book a free consultaion link">
+                                    Book a free consultation
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </nav>
