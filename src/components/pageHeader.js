@@ -1,9 +1,16 @@
+import { Link, NavLink } from "react-router-dom";
+
 import phoneIcon from '../images/icons/phone.svg';
 import mailIcon from '../images/icons/mail.svg';
 import logo from '../images/logo.svg';
 import mobileMenuIcon from '../images/icons/mobile-menu.svg';
 
-function PageHeader() {
+const toggleNavOffcanvas = () => {
+    document.querySelector('.offcanvas .btn-close').click();
+}
+
+const PageHeader = () => {
+
     return (
         <header className="App-header">
             <div className="row contact-row">
@@ -21,15 +28,15 @@ function PageHeader() {
             <div className="row main-header bg-dark">
                 <nav className="navbar navbar-dark bg-dark navbar-expand-lg mx-auto">
                     <div className="container-fluid">
-                        <a className="navbar-brand" href="#">
+                        <Link className="navbar-brand" to="/">
                             <img src={logo} className="header-logo" alt="J.G.Miller header logo" />
-                        </a>
+                        </Link>
                         <button className="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon w-auto h-auto">
-                                <img src={mobileMenuIcon} className="mobile-menu-icon" alt="Mobile menu image" />
+                                <img src={mobileMenuIcon} className="mobile-menu-icon" alt="Mobile menu" />
                             </span>
                         </button>
-                        <div className="offcanvas offcanvas-end border-start-0 text-bg-dark" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div className="offcanvas offcanvas-end border-start-0 text-bg-dark" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                             <div className="offcanvas-header border-bottom">
                                 <img src={logo} className="header-logo" alt="J.G.Miller header logo" />
                                 <button type="button" className="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -37,24 +44,24 @@ function PageHeader() {
                             <div className="offcanvas-body align-items-center">
                                 <ul className="navbar-nav justify-content-end flex-grow-1 poppins-regular">
                                     <li className="nav-item">
-                                        <a className="nav-link active poppins-bold" aria-current="page" href="#">Home</a>
+                                        <NavLink className={({ isActive }) => (isActive ? 'nav-link active poppins-bold' : 'nav-link')} aria-current="page" to="/" onClick={toggleNavOffcanvas}>Home</NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#">Services</a>
+                                        <NavLink className={({ isActive }) => (isActive ? 'nav-link active poppins-bold' : 'nav-link')} to="/services" onClick={toggleNavOffcanvas}>Services</NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#">About us</a>
+                                        <NavLink className={({ isActive }) => (isActive ? 'nav-link active poppins-bold' : 'nav-link')} to="/about" onClick={toggleNavOffcanvas}>About us</NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#">Contact</a>
+                                        <NavLink className={({ isActive }) => (isActive ? 'nav-link active poppins-bold' : 'nav-link')} to="/contact" onClick={toggleNavOffcanvas}>Contact</NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#">Blog</a>
+                                        <NavLink className={({ isActive }) => (isActive ? 'nav-link active poppins-bold' : 'nav-link')} to="/blog" onClick={toggleNavOffcanvas}>Blog</NavLink>
                                     </li>
                                 </ul>
-                                <a href="#" className="btn btn-primary text-white cta header-cta poppins-medium border-0 rounded-pill" alt="Book a free consultaion link">
+                                <Link to="/contact" className="btn btn-primary text-white cta header-cta poppins-medium border-0 rounded-pill" alt="Book a free consultaion link" onClick={toggleNavOffcanvas}>
                                     Book a free consultation
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -62,6 +69,7 @@ function PageHeader() {
             </div>
         </header>
     );
+
 }
 
 export default PageHeader;

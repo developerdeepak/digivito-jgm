@@ -1,7 +1,7 @@
 import PageHeader from './pageHeader';
 
-const Global = {
+const Components = {
     PageHeader
 };
 
-export default Global;
+export default Components;
