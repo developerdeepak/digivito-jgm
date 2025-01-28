@@ -1,0 +1,38 @@
+.App-footer {
+
+    .copyright-row .col,
+    .navigation-row .col {
+        max-width: 1600px;
+    }
+
+    .copyright-text {
+        padding: 24px 48px;
+    }
+
+    .navigation-row .col {
+        padding: 51px 0 64px;
+    }
+
+    .logo-container {
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+    }
+
+    .footer-nav-container {
+        gap: 157px;
+    }
+
+    .footer-nav-group {
+        @include media-breakpoint-up(xl) {
+            max-width: 276px;
+        }
+
+        .nav-item {
+            font-size: 14px;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 18px;
+            }
+        }
+    }
+}

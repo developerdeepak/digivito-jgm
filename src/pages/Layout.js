@@ -1,11 +1,12 @@
 import { Outlet } from "react-router-dom";
-import PageHeader from "../components/pageHeader";
+import Components from "../components";
 
 const Layout = () => {
     return (
         <>
-            <PageHeader />
+            <Components.PageHeader />
             <Outlet />
+            <Components.PageFooter />
         </>
     )
 };

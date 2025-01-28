@@ -1,9 +1,11 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
+import logo from '../images/logo.svg';
 import phoneIcon from '../images/icons/phone.svg';
 import mailIcon from '../images/icons/mail.svg';
-import logo from '../images/logo.svg';
 import mobileMenuIcon from '../images/icons/mobile-menu.svg';
+import HeaderNavItem from "./headerNavItem";
+import AppData from '../data/data.json';
 
 const toggleNavOffcanvas = () => {
     document.querySelector('.offcanvas .btn-close').click();
@@ -11,17 +13,23 @@ const toggleNavOffcanvas = () => {
 
 const PageHeader = () => {
 
+    const NavItemsHTML = [];
+
+    AppData.navItems.forEach((item, index) => {
+        NavItemsHTML.push(<HeaderNavItem onClick={toggleNavOffcanvas} {...item} key={index} />);
+    });
+
     return (
         <header className="App-header">
             <div className="row contact-row">
                 <div className="col d-flex justify-content-center justify-content-lg-end align-items-center mx-auto">
-                    <a href="tel:(801) 872-9889" className="poppins-medium font-14 text-black text-decoration-none d-flex align-items-center contact-phone">
+                    <a href={"tel:" + AppData.contact.phone} className="poppins-medium text-black text-decoration-none d-flex align-items-center contact-phone">
                         <img src={phoneIcon} className="phone-icon contact-icon" alt="phone icon" />
-                        <span>(801) 872-9889</span>
+                        <span>{AppData.contact.phone}</span>
                     </a>
-                    <a href="mailto:jgmiller@domain.com" className="poppins-medium font-14 text-black text-decoration-none d-flex align-items-center contact-mail">
+                    <a href={"mailto:" + AppData.contact.mail} className="poppins-medium text-black text-decoration-none d-flex align-items-center contact-mail">
                         <img src={mailIcon} className="mail-icon contact-icon" alt="mail icon" />
-                        <span>jgmiller@domain.com</span>
+                        <span>{AppData.contact.mail}</span>
                     </a>
                 </div>
             </div>
@@ -43,24 +51,10 @@ const PageHeader = () => {
                             </div>
                             <div className="offcanvas-body align-items-center">
                                 <ul className="navbar-nav justify-content-end flex-grow-1 poppins-regular">
-                                    <li className="nav-item">
-                                        <NavLink className={({ isActive }) => (isActive ? 'nav-link active poppins-bold' : 'nav-link')} aria-current="page" to="/" onClick={toggleNavOffcanvas}>Home</NavLink>
-                                    </li>
-                                    <li className="nav-item">
-                                        <NavLink className={({ isActive }) => (isActive ? 'nav-link active poppins-bold' : 'nav-link')} to="/services" onClick={toggleNavOffcanvas}>Services</NavLink>
-                                    </li>
-                                    <li className="nav-item">
-                                        <NavLink className={({ isActive }) => (isActive ? 'nav-link active poppins-bold' : 'nav-link')} to="/about" onClick={toggleNavOffcanvas}>About us</NavLink>
-                                    </li>
-                                    <li className="nav-item">
-                                        <NavLink className={({ isActive }) => (isActive ? 'nav-link active poppins-bold' : 'nav-link')} to="/contact" onClick={toggleNavOffcanvas}>Contact</NavLink>
-                                    </li>
-                                    <li className="nav-item">
-                                        <NavLink className={({ isActive }) => (isActive ? 'nav-link active poppins-bold' : 'nav-link')} to="/blog" onClick={toggleNavOffcanvas}>Blog</NavLink>
-                                    </li>
+                                    {NavItemsHTML}
                                 </ul>
-                                <Link to="/contact" className="btn btn-primary text-white cta header-cta poppins-medium border-0 rounded-pill" alt="Book a free consultaion link" onClick={toggleNavOffcanvas}>
-                                    Book a free consultation
+                                <Link to={AppData.header.cta.link} className="btn btn-primary text-white cta header-cta poppins-medium border-0 rounded-pill" alt="Book a free consultaion link" onClick={toggleNavOffcanvas}>
+                                    {AppData.header.cta.text}
                                 </Link>
                             </div>
                         </div>

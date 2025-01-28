@@ -1,7 +1,9 @@
 import PageHeader from './pageHeader';
+import PageFooter from './pageFooter';
 
 const Components = {
-    PageHeader
+    PageHeader,
+    PageFooter
 };
 
 export default Components;

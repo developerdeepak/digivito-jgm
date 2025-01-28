@@ -1,0 +1,99 @@
+{
+    "contact": {
+        "phone": "(801) 872-9889",
+        "mail": "jgmiller@domain.com"
+    },
+    "navItems": [
+        {
+            "name": "Home",
+            "route": "/"
+        },
+        {
+            "name": "Services",
+            "route": "/services"
+        },
+        {
+            "name": "About us",
+            "route": "/about"
+        },
+        {
+            "name": "Contact",
+            "route": "/contact"
+        },
+        {
+            "name": "Blogs",
+            "route": "/blog"
+        }
+    ],
+    "header": {
+        "cta": {
+            "text": "Book a free consultation",
+            "link": "/contact"
+        }
+    },
+    "footer": {
+        "copyrightText1": "Copyright @2024 JGMILLER",
+        "copyrightText2": "All Right Reserved",
+        "navigation": [
+            {
+                "heading": "Services",
+                "items": [
+                    {
+                        "name": "Estate Planning"
+                    },
+                    {
+                        "name": "Business Law"
+                    },
+                    {
+                        "name": "Wills & Trusts"
+                    },
+                    {
+                        "name": "Power of Attorny"
+                    }
+                ]
+            },
+            {
+                "heading": "Site Map",
+                "items": [
+                    {
+                        "name": "Home",
+                        "route": "/"
+                    },
+                    {
+                        "name": "About us",
+                        "route": "/about"
+                    },
+                    {
+                        "name": "Services",
+                        "route": "/services"
+                    },
+                    {
+                        "name": "Blogs",
+                        "route": "/blog"
+                    },
+                    {
+                        "name": "Book Appointment",
+                        "route": "/contact"
+                    }
+                ]
+            },
+            {
+                "heading": "Links",
+                "items": [
+                    {
+                        "name": "Terms of use"
+                    },
+                    {
+                        "name": "Privacy Policy"
+                    }
+                ]
+            }
+        ],
+        "estatePlanning": {
+            "heading": "Estate Planning and Business Attorney"
+        },
+        "contact": {
+            "heading": "Contact Us"
+        }
+    }
+}
