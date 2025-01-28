@@ -34,7 +34,38 @@
     "footer": {
         "copyrightText1": "Copyright @2024 JGMILLER",
         "copyrightText2": "All Right Reserved",
+        "copyrightText": "Copyright @2024 JGMILLER <nobr>All Right Reserved</nobr>",
         "navigation": [
+            {
+                "heading": "Estate Planning and Business Attorney",
+                "items": [
+                    {
+                        "name": "Serving Clients in:<br/>Salt Lake City, Bountiful, Ogden, Centerville, Layton, Syracuse, and Phoenix, Gilbert, and their surrounding areas."
+                    }
+                ],
+                "social": [
+                    {
+                        "name": "Facebook",
+                        "icon": "FacebookFillWhite",
+                        "link": "https://www.facebook.com/"
+                    },
+                    {
+                        "name": "LinkedIn",
+                        "icon": "LinkedInBoxFillWhite",
+                        "link": "https://www.linkedin.com/feed/"
+                    },
+                    {
+                        "name": "X",
+                        "icon": "TwitterFillWhite",
+                        "link": "https://www.x.com/"
+                    },
+                    {
+                        "name": "Instagram",
+                        "icon": "InstagramFill",
+                        "link": "https://www.instagram.com/"
+                    }
+                ]
+            },
             {
                 "heading": "Services",
                 "items": [
@@ -87,13 +118,29 @@
                         "name": "Privacy Policy"
                     }
                 ]
+            },
+            {
+                "heading": "Contact Us",
+                "items": [
+                    {
+                        "name": "Salt Lake City, UT Office<br/>5107 S. 900 E.<br/>Suite 201<br/>Salt Lake City, UT 84117",
+                        "icon": "LocationWhite"
+                    },
+                    {
+                        "name": "Gilbert, AZ Office<br/>7400 S Power Road<br/>Building 1, Suite 101<br/>Gilbert, AZ 85297",
+                        "icon": "LocationWhite"
+                    },
+                    {
+                        "name": "Anywhere via Video Meeting",
+                        "icon": "VideoCallWhite"
+                    },
+                    {
+                        "name": "jgmiller@domain.com",
+                        "route": "mailto:jgmiller@domain.com",
+                        "icon": "MsgIconWhite"
+                    }
+                ]
             }
-        ],
-        "estatePlanning": {
-            "heading": "Estate Planning and Business Attorney"
-        },
-        "contact": {
-            "heading": "Contact Us"
-        }
+        ]
     }
 }

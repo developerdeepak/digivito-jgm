@@ -10,7 +10,15 @@
     }
 
     .navigation-row .col {
-        padding: 51px 0 64px;
+        @include media-breakpoint-down(lg) {
+            padding-top: 46px;
+            padding-bottom: 46px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding-top: 51px;
+            padding-bottom: 64px;
+        }
     }
 
     .logo-container {
@@ -19,7 +27,17 @@
     }
 
     .footer-nav-container {
-        gap: 157px;
+        @include media-breakpoint-down(lg) {
+            padding: 0 86px;
+        }
+
+        @include media-breakpoint-down(xl) {
+            gap: 30px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            gap: 157px;
+        }
     }
 
     .footer-nav-group {
@@ -27,8 +45,26 @@
             max-width: 276px;
         }
 
+        .group-heading {
+            margin-bottom: 20px;
+        }
+
+        .nav {
+            @include media-breakpoint-down(lg) {
+                gap: 10px;
+            }
+
+            @include media-breakpoint-up(lg) {
+                gap: 15px;
+            }
+        }
+
         .nav-item {
-            font-size: 14px;
+            gap: 16px;
+
+            @include media-breakpoint-down(lg) {
+                font-size: 14px;
+            }
 
             @include media-breakpoint-up(lg) {
                 font-size: 18px;
