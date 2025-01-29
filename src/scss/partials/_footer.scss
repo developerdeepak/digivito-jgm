@@ -1,15 +1,10 @@
 .App-footer {
 
-    .copyright-row .col,
-    .navigation-row .col {
-        max-width: 1600px;
-    }
-
     .copyright-text {
         padding: 24px 48px;
     }
 
-    .navigation-row .col {
+    .navigation-row > .col {
         @include media-breakpoint-down(lg) {
             padding-top: 46px;
             padding-bottom: 46px;
@@ -17,7 +12,12 @@
 
         @include media-breakpoint-up(lg) {
             padding-top: 51px;
-            padding-bottom: 64px;
+            padding-bottom:64px;
+        }
+
+        @include media-breakpoint-between(lg, xxxl) {
+            padding-left: 30px;
+            padding-right: 30px;
         }
     }
 
@@ -31,20 +31,12 @@
             padding: 0 86px;
         }
 
-        @include media-breakpoint-down(xl) {
+        > .row {
             gap: 30px;
-        }
-
-        @include media-breakpoint-up(xl) {
-            gap: 157px;
         }
     }
 
     .footer-nav-group {
-        @include media-breakpoint-up(xl) {
-            max-width: 276px;
-        }
-
         .group-heading {
             margin-bottom: 20px;
         }
@@ -61,14 +53,7 @@
 
         .nav-item {
             gap: 16px;
-
-            @include media-breakpoint-down(lg) {
-                font-size: 14px;
-            }
-
-            @include media-breakpoint-up(lg) {
-                font-size: 18px;
-            }
+            font-size: clamp(0.875rem, 0.7985rem + 0.3265vw, 1.125rem);
         }
     }
 }

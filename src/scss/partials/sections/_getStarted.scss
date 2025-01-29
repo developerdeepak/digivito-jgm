@@ -1,0 +1,36 @@
+.get-started-section {
+    .content {
+        max-width: 741px;
+
+        @include media-breakpoint-down(lg) {
+            text-align: center;
+        }
+    }
+
+    .heading {
+        font-size: clamp(1.5rem, -2.5789rem + 6.5789vw, 4rem);
+        line-height: 1.3;
+    }
+
+    .cta {
+        font-size: clamp(1rem, 0.8469rem + 0.6531vw, 1.5rem);
+        width: clamp(21.9375rem, 19.284rem + 7.055vw, 27.75rem);
+        margin-top: clamp(1.5rem, 1.1359rem + 1.5534vw, 3rem);
+    }
+
+    .banner-container {
+        @include media-breakpoint-down(xxxl) {
+            padding-right: 0;
+        }
+
+        @include media-breakpoint-down(lg) {
+            padding-left: 0;
+        }
+    }
+
+    .text-container {
+        @include media-breakpoint-down(lg) {
+            justify-content: center;
+        }
+    }
+}

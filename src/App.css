@@ -2,3 +2,7 @@
   max-width: 1920px;
   min-height: 100vh;
 }
+
+.mw-1600 {
+  max-width: 1600px;
+}

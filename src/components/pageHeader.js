@@ -1,11 +1,18 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import logo from '../images/logo.svg';
 import phoneIcon from '../images/icons/phone.svg';
 import mailIcon from '../images/icons/mail.svg';
 import mobileMenuIcon from '../images/icons/mobile-menu.svg';
-import HeaderNavItem from "./headerNavItem";
 import AppData from '../data/data.json';
+
+const HeaderNavItem = (props) => {
+    return (
+        <li className="nav-item">
+            <NavLink className={({ isActive }) => (isActive ? 'nav-link active poppins-bold' : 'nav-link')} to={props.link} onClick={props.onClick}>{props.name}</NavLink>
+        </li>
+    );
+};
 
 const toggleNavOffcanvas = () => {
     document.querySelector('.offcanvas .btn-close').click();
@@ -22,7 +29,7 @@ const PageHeader = () => {
     return (
         <header className="App-header">
             <div className="row contact-row">
-                <div className="col d-flex justify-content-center justify-content-lg-end align-items-center mx-auto">
+                <div className="col d-flex justify-content-center justify-content-lg-end align-items-center mx-auto mw-1600">
                     <a href={"tel:" + AppData.contact.phone} className="poppins-medium text-black text-decoration-none d-flex align-items-center contact-phone">
                         <img src={phoneIcon} className="phone-icon contact-icon" alt="phone icon" />
                         <span>{AppData.contact.phone}</span>
@@ -34,7 +41,7 @@ const PageHeader = () => {
                 </div>
             </div>
             <div className="row main-header bg-dark">
-                <nav className="navbar navbar-dark bg-dark navbar-expand-lg mx-auto">
+                <nav className="navbar navbar-dark bg-dark navbar-expand-lg mx-auto mw-1600">
                     <div className="container-fluid">
                         <Link className="navbar-brand" to="/">
                             <img src={logo} className="header-logo" alt="J.G.Miller header logo" />

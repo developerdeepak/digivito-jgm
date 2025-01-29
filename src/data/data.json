@@ -6,23 +6,23 @@
     "navItems": [
         {
             "name": "Home",
-            "route": "/"
+            "link": "/"
         },
         {
             "name": "Services",
-            "route": "/services"
+            "link": "/services"
         },
         {
             "name": "About us",
-            "route": "/about"
+            "link": "/about"
         },
         {
             "name": "Contact",
-            "route": "/contact"
+            "link": "/contact"
         },
         {
             "name": "Blogs",
-            "route": "/blog"
+            "link": "/blog"
         }
     ],
     "header": {
@@ -88,23 +88,23 @@
                 "items": [
                     {
                         "name": "Home",
-                        "route": "/"
+                        "link": "/"
                     },
                     {
                         "name": "About us",
-                        "route": "/about"
+                        "link": "/about"
                     },
                     {
                         "name": "Services",
-                        "route": "/services"
+                        "link": "/services"
                     },
                     {
                         "name": "Blogs",
-                        "route": "/blog"
+                        "link": "/blog"
                     },
                     {
                         "name": "Book Appointment",
-                        "route": "/contact"
+                        "link": "/contact"
                     }
                 ]
             },
@@ -136,11 +136,20 @@
                     },
                     {
                         "name": "jgmiller@domain.com",
-                        "route": "mailto:jgmiller@domain.com",
+                        "link": "mailto:jgmiller@domain.com",
                         "icon": "MsgIconWhite"
                     }
                 ]
             }
         ]
+    },
+    "sections": {
+        "getStarted": {
+            "heading": "Ready to get started?<br/>Let’s work together to protect your future!",
+            "cta": {
+                "text": "Book an appointment now",
+                "link": "/contact"
+            }
+        }
     }
 }

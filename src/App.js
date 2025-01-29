@@ -10,6 +10,7 @@ function App() {
           <Route path="/" element={<Pages.Layout />}>
             <Route index element={<Pages.Home />} />
             <Route path="/contact" element={<Pages.Contact />} />
+            <Route path="/about" element={<Pages.About />} />
             <Route path="*" element={<Pages.ErrorPage />} />
           </Route>
         </Routes>
