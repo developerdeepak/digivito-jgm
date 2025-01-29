@@ -9,3 +9,16 @@
         color: $primary;
     }
 }
+
+.h2 {
+    font-size: clamp(1.5rem, -2.5789rem + 6.5789vw, 4rem);
+    line-height: 1.3;
+}
+
+.mw-1400 {
+    max-width: 1400px;
+}
+
+.mw-1600 {
+    max-width: 1600px;
+}

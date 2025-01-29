@@ -150,6 +150,57 @@
                 "text": "Book an appointment now",
                 "link": "/contact"
             }
+        },
+        "pageSpecific": {
+            "home": {
+                "practiceAreas": {
+                    "heading": "Our Practice Areas",
+                    "description": "Looking for straightforward legal advice you can trust? Whether it’s securing your family’s future or <br class='d-none d-lg-inline-block'/>navigating business challenges, we’re here to help. Let’s work together to find solutions that fit <br class='d-none d-lg-inline-block'/>your unique needs. Schedule a consultation today and take the next step with confidence.",
+                    "columns": [
+                        {
+                            "heading": "Business",
+                            "items": [
+                                "Business Structuring",
+                                "Contracts & Agreements",
+                                "Mergers & Acquisitions",
+                                "Ongoing Counsel"
+                            ]
+                        },
+                        {
+                            "heading": "Estate Planning",
+                            "items": [
+                                "Wills & Trusts",
+                                "Power of Attorney",
+                                "Health Care Directives",
+                                "Trust Funding"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "contact": {
+                "reachOut": {
+                    "heading": "Reach Out",
+                    "description": "Looking for straightforward legal advice you can trust? Whether it’s securing your family’s future or <br class='d-none d-lg-inline-block'/>navigating business challenges, we’re here to help. Let’s work together to find solutions that fit <br class='d-none d-lg-inline-block'/>your unique needs. Schedule a consultation today and take the next step with confidence.",
+                    "columns": [
+                        {
+                            "heading": "Why Reach Out?",
+                            "items": [
+                                "Personalized Service",
+                                "Expert Guidance"
+                            ]
+                        },
+                        {
+                            "heading": "When to Reach Out?",
+                            "items": [
+                                "Estate Planning",
+                                "Business Law",
+                                "Flexible consultations via Zoom, tailored to fit your schedule"
+                            ]
+                        }
+                    ]
+                }
+            }
         }
     }
 }
