@@ -7,7 +7,7 @@ const ListColumn = (props) => {
 
     props.items.forEach((item, index) => {
         columnItems.push(
-            <li class="list-group-item d-flex justify-content-between align-items-center px-0" key={index}>
+            <li class="list-group-item d-flex justify-content-between align-items-center px-0 bg-transparent" key={index}>
                 {item}
                 <img src={Icons.ArrowRightPrimary} className="mw-100" alt="Right arrow primary icon" />
             </li>
@@ -38,7 +38,7 @@ const TwoColumnListComponent = (props) => {
             <div className="col mw-1600 mx-auto">
                 <h2 className="mb-4 poppins-bold h2 text-center">{props.heading}</h2>
                 <p className="text-center">{HTMLParser.parseHTML(props.description)}</p>
-                <div className="mw-1400 mx-auto">
+                <div className="columns-group mx-auto">
                     <div className="row flex-column flex-lg-row columns">
                         {listColumns}
                     </div>

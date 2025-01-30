@@ -2,11 +2,21 @@
     background-image: url(../../../images/corner-tile-left.png), url(../../../images/corner-tile-right.png);
     background-position: left bottom, right top;
     background-repeat: no-repeat, no-repeat;
-    background-size: 280px;
+    background-size: 120px;
     padding: 64px 0;
+
+    @include media-breakpoint-up(lg) {
+        background-size: 280px;
+    }
 
     p {
         margin-bottom: 44px;
+    }
+
+    .columns-group {
+        @include media-breakpoint-up(xxxl) {
+            max-width: 70%;
+        }
     }
 
     .columns {

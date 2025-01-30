@@ -5,10 +5,8 @@
     }
 
     .navigation-row > .col {
-        @include media-breakpoint-down(lg) {
-            padding-top: 46px;
-            padding-bottom: 46px;
-        }
+        padding-top: 46px;
+        padding-bottom: 46px;
 
         @include media-breakpoint-up(lg) {
             padding-top: 51px;
@@ -42,9 +40,7 @@
         }
 
         .nav {
-            @include media-breakpoint-down(lg) {
-                gap: 10px;
-            }
+            gap: 10px;
 
             @include media-breakpoint-up(lg) {
                 gap: 15px;

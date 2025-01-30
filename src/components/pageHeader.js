@@ -46,7 +46,7 @@ const PageHeader = () => {
                         </Link>
                         <button className="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon w-auto h-auto">
-                                <img src={Icons.mobileMenuIcon} className="mobile-menu-icon" alt="Mobile menu" />
+                                <img src={Icons.MobileMenu} className="mobile-menu-icon" alt="Mobile menu" />
                             </span>
                         </button>
                         <div className="offcanvas offcanvas-end border-start-0 text-bg-dark" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
