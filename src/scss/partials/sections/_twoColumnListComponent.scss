@@ -11,6 +11,7 @@
 
     p {
         margin-bottom: 44px;
+        font-size: clamp(1rem, 0.5385rem + 0.9615vw, 1.5rem);
     }
 
     .columns-group {

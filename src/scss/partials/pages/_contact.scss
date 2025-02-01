@@ -1,0 +1,14 @@
+.contact-hero-banner {
+    .banner-content {
+        @include media-breakpoint-up(md) {
+            top: 0;
+            padding-top: 80px;
+        }
+    }
+
+    .contact-form-container {
+        max-width: 680px;
+        background-color: $primary-80;
+        padding: 50px;
+    }
+}

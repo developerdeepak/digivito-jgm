@@ -7,7 +7,7 @@ const ListColumn = (props) => {
 
     props.items.forEach((item, index) => {
         columnItems.push(
-            <li class="list-group-item d-flex justify-content-between align-items-center px-0 bg-transparent" key={index}>
+            <li className="list-group-item d-flex justify-content-between align-items-center px-0 bg-transparent" key={index}>
                 {item}
                 <img src={Icons.ArrowRightPrimary} className="mw-100" alt="Right arrow primary icon" />
             </li>
@@ -17,9 +17,9 @@ const ListColumn = (props) => {
     return (
         <div className="col list">
             <h4 className="poppins-bold text-primary text-uppercase position-relative d-flex align-items-center h4">
-                <span class="bg-white pe-3">{props.heading}</span>
+                <span className="bg-white pe-3">{props.heading}</span>
             </h4>
-            <ul class="list-group list-group-flush">
+            <ul className="list-group list-group-flush">
                 {columnItems}
             </ul>
         </div>

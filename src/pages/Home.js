@@ -1,10 +1,12 @@
 import Components from "../components";
 import AppData from '../data/data.json';
 
+const pageSpecificData = AppData.sections.pageSpecific.home;
+
 const Home = () => {
     return (
         <>
-            <Components.TwoColumnListComponent {...AppData.sections.pageSpecific.home.practiceAreas} />
+            <Components.TwoColumnListComponent {...pageSpecificData.practiceAreas} />
         </>
     );
 };
