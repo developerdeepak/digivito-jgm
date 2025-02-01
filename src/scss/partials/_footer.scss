@@ -12,11 +12,6 @@
             padding-top: 51px;
             padding-bottom:64px;
         }
-
-        @include media-breakpoint-between(lg, xxxl) {
-            padding-left: 30px;
-            padding-right: 30px;
-        }
     }
 
     .logo-container {

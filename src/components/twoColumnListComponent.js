@@ -1,8 +1,8 @@
+import React, { Component } from 'react';
 import HTMLParser from "../helpers/htmlParser";
 import Icons from "../images/icons";
 
 const ListColumn = (props) => {
-    console.log(props);
     const columnItems = [];
 
     props.items.forEach((item, index) => {
@@ -26,26 +26,49 @@ const ListColumn = (props) => {
     );
 };
 
-const TwoColumnListComponent = (props) => {
-    const listColumns = [];
+class TwoColumnListComponent extends Component {
+    constructor(props) {
+        super(props);
+        this.sectionRef = React.createRef();
+    }
 
-    props.columns.forEach((column, index) => {
-        listColumns.push(<ListColumn columnIndex={index} key={index} {...column} />)
-    });
+    updateComponentTopPadding() {
+        let elementPadding = 64;
 
-    return (
-        <div className="row two-col-list-section">
-            <div className="col mw-1600 mx-auto">
-                <h2 className="mb-4 poppins-bold h2 text-center">{props.heading}</h2>
-                <p className="text-center">{HTMLParser.parseHTML(props.description)}</p>
-                <div className="columns-group mx-auto">
-                    <div className="row flex-column flex-lg-row columns">
-                        {listColumns}
+        if (this.props.addOnPadding && this.props.addOnPadding > 0) {
+            elementPadding += this.props.addOnPadding;
+        }
+
+        this.sectionRef.current.style.paddingTop = `${elementPadding}px`;
+    }
+
+    componentDidUpdate(prevProps) {
+        if(prevProps.addOnPadding !== this.props.addOnPadding) {
+            this.updateComponentTopPadding();
+        }
+    }
+
+    render() {
+        const listColumns = [];
+
+        this.props.columns.forEach((column, index) => {
+            listColumns.push(<ListColumn columnIndex={index} key={index} {...column} />);
+        });
+
+        return (
+            <div className="row two-col-list-section" ref={this.sectionRef}>
+                <div className="col mw-1600 mx-auto">
+                    <h2 className="mb-4 poppins-bold h2 text-center">{this.props.heading}</h2>
+                    <p className="text-center">{HTMLParser.parseHTML(this.props.description)}</p>
+                    <div className="columns-group mx-auto">
+                        <div className="row flex-column flex-lg-row columns">
+                            {listColumns}
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    );
-};
+        );
+    }
+}
 
 export default TwoColumnListComponent;
