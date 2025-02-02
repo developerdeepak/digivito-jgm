@@ -184,6 +184,31 @@
                     "heading": "Get In Touch",
                     "description": "We believe in making the legal process as easy and <br class='d-none d-lg-inline-block'/>accessible as possible. Whether you’re planning for <br class='d-none d-lg-inline-block'/>the future or managing a growing business, we’re <br class='d-none d-lg-inline-block'/>here to help you every step of the way."
                 },
+                "form": {
+                    "heading": "Please fill the form and we will contact you",
+                    "fields": {
+                        "name": {
+                            "label": "Name"
+                        },
+                        "email": {
+                            "label": "Email"
+                        },
+                        "phone": {
+                            "label": "Phone"
+                        },
+                        "reason": {
+                            "label": "Contact Reason"
+                        },
+                        "shouldKnow": {
+                            "label": "Anything we should know?"
+                        }
+                    },
+                    "btns": {
+                        "submit": {
+                            "text": "Get In touch"
+                        }
+                    }
+                },
                 "reachOut": {
                     "heading": "Reach Out",
                     "description": "Looking for straightforward legal advice you can trust? Whether it’s securing your family’s future or <br class='d-none d-lg-inline-block'/>navigating business challenges, we’re here to help. Let’s work together to find solutions that fit <br class='d-none d-lg-inline-block'/>your unique needs. Schedule a consultation today and take the next step with confidence.",

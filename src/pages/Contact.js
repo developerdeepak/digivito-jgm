@@ -7,31 +7,31 @@ const pageSpecificData = AppData.sections.pageSpecific.contact;
 
 const ContactForm = () => {
     return (
-        <div className="contact-form-container rounded">
-            <p>Please fill the form and we will contact you</p>
+        <div className="contact-form-container">
+            <p className="form-heading poppins-semibold">{pageSpecificData.form.heading}</p>
             <form className="row">
                 <div className="col-12 mb-3">
-                    <label htmlFor="exampleInputEmail1" className="form-label">Name</label>
-                    <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                    <label htmlFor="contactName" className="form-label">{pageSpecificData.form.fields.name.label}</label>
+                    <input type="text" className="form-control rounded-pill" id="contactName" />
                 </div>
                 <div className="col-md-6 mb-3">
-                    <label htmlFor="exampleInputEmail1" className="form-label">Email</label>
-                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                    <label htmlFor="contactEmail" className="form-label">{pageSpecificData.form.fields.email.label}</label>
+                    <input type="email" className="form-control rounded-pill" id="contactEmail" />
                 </div>
                 <div className="col-md-6 mb-3">
-                    <label htmlFor="exampleInputPassword1" className="form-label">Phone</label>
-                    <input type="tel" className="form-control" id="exampleInputPassword1" />
+                    <label htmlFor="contactPhone" className="form-label">{pageSpecificData.form.fields.phone.label}</label>
+                    <input type="tel" className="form-control rounded-pill" id="contactPhone" />
                 </div>
                 <div className="col-12 mb-3">
-                    <label htmlFor="exampleInputEmail1" className="form-label">Contact Reason</label>
-                    <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                    <label htmlFor="contactReason" className="form-label">{pageSpecificData.form.fields.reason.label}</label>
+                    <input type="text" className="form-control rounded-pill" id="contactReason" />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="exampleFormControlTextarea1" className="form-label">Anything we should know?</label>
-                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label htmlFor="contactShouldKnow" className="form-label">{pageSpecificData.form.fields.shouldKnow.label}</label>
+                    <textarea className="form-control" id="contactShouldKnow" rows="3"></textarea>
                 </div>
                 <div className="col-12">
-                    <button type="submit" className="btn btn-dark">Get In touch</button>
+                    <button type="submit" className="btn btn-dark rounded-pill poppins-bold">{pageSpecificData.form.btns.submit.text}</button>
                 </div>
             </form>
         </div>

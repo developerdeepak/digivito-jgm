@@ -45,16 +45,18 @@ const FooterSocialLinks = (props) => {
 
 const FooterNavGroup = (props) => {
     const NavGroupItemsHTML = [];
+    let navGroupLiCount = 0;
 
     if (props.items && props.items.length > 0) {
         props.items.forEach((item, index) => {
-            NavGroupItemsHTML.push(<FooterNavGroupItem {...item} key={index} />);
+            navGroupLiCount = index;
+            NavGroupItemsHTML.push(<FooterNavGroupItem {...item} key={navGroupLiCount} />);
         });
     }
 
     if (props.social && props.social.length > 0) {
         NavGroupItemsHTML.push(
-            <li className="nav-item d-flex align-items-center">
+            <li className="nav-item d-flex align-items-center" key={navGroupLiCount + 1}>
                 <FooterSocialLinks {...props} />
             </li>
         );

@@ -7,8 +7,43 @@
     }
 
     .contact-form-container {
-        max-width: 680px;
         background-color: $primary-80;
         padding: 50px;
+
+        @include media-breakpoint-down(md) {
+            margin-left: calc(-0.5* var(--bs-gutter-x));
+            margin-right: calc(-0.5* var(--bs-gutter-x));
+            margin-bottom: -48px;
+        }
+
+        @include media-breakpoint-up(md) {
+            border-radius: 12px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            max-width: 680px;
+        }
+
+        .form-heading {
+            font-size: 28px;
+        }
+
+        textarea {
+            border-radius: 24px;
+        }
+
+        button {
+            height: 70px;
+            margin-top: 40px;
+
+            @include media-breakpoint-down(md) {
+                width: 100%;
+            }
+
+            @include media-breakpoint-up(md) {
+                font-size: 24px;
+                padding: 0 35px;
+            }
+        }
     }
 }
