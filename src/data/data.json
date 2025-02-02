@@ -143,112 +143,127 @@
             }
         ]
     },
-    "sections": {
-        "getStarted": {
-            "heading": "Ready to get started?<br/>Let’s work together to protect your future!",
-            "cta": {
-                "text": "Book an appointment now",
-                "link": "/contact"
+    "pages": {
+        "home": {
+            "heroBanner": {
+                "addOnClass": "home-hero-banner",
+                "heading": "Guiding Your Future,<br/>Securing Your Business",
+                "description": "From estate planning to business law, We provide <br class='d-none d-lg-inline-block' />personalized legal solutions for peace of mind.",
+                "cta": {
+                    "text": "Book a free consultation",
+                    "link": "/contact"
+                }
+            },
+            "practiceAreas": {
+                "heading": "Our Practice Areas",
+                "description": "Looking for straightforward legal advice you can trust? Whether it’s securing your family’s future or <br class='d-none d-lg-inline-block'/>navigating business challenges, we’re here to help. Let’s work together to find solutions that fit <br class='d-none d-lg-inline-block'/>your unique needs. Schedule a consultation today and take the next step with confidence.",
+                "columns": [
+                    {
+                        "heading": "Business",
+                        "items": [
+                            "Business Structuring",
+                            "Contracts & Agreements",
+                            "Mergers & Acquisitions",
+                            "Ongoing Counsel"
+                        ]
+                    },
+                    {
+                        "heading": "Estate Planning",
+                        "items": [
+                            "Wills & Trusts",
+                            "Power of Attorney",
+                            "Health Care Directives",
+                            "Trust Funding"
+                        ]
+                    }
+                ]
+            },
+            "scheduleFreeConsultation": {
+                "subheading": "START YOUR LEGAL JOURNEY TODAY",
+                "heading": "Schedule Your Free <br/>Consultation",
+                "description": "From business growth to family planning, we’re here to help you <br class='d-none d-lg-inline-block'/>navigate every legal step. Schedule your complimentary 30-minute <br class='d-none d-lg-inline-block'/>consultation today and start planning for your future with confidence.",
+                "disclaimer": "*Disclaimer: The free consultation does not establish an attorney-client relationship. <br class='d-none d-lg-inline-block'/>Legal advice is provided only upon engagement of services.",
+                "cta": {
+                    "text": "Contact us",
+                    "link": "/contact"
+                }
             }
         },
-        "pageSpecific": {
-            "home": {
-                "heroBanner": {
-                    "addOnClass": "home-hero-banner",
-                    "heading": "Guiding Your Future,<br/>Securing Your Business",
-                    "description": "From estate planning to business law, We provide <br class='d-none d-lg-inline-block' />personalized legal solutions for peace of mind.",
-                    "cta": {
-                        "text": "Book a free consultation",
-                        "link": "/contact"
-                    }
-                },
-                "practiceAreas": {
-                    "heading": "Our Practice Areas",
-                    "description": "Looking for straightforward legal advice you can trust? Whether it’s securing your family’s future or <br class='d-none d-lg-inline-block'/>navigating business challenges, we’re here to help. Let’s work together to find solutions that fit <br class='d-none d-lg-inline-block'/>your unique needs. Schedule a consultation today and take the next step with confidence.",
-                    "columns": [
-                        {
-                            "heading": "Business",
-                            "items": [
-                                "Business Structuring",
-                                "Contracts & Agreements",
-                                "Mergers & Acquisitions",
-                                "Ongoing Counsel"
-                            ]
-                        },
-                        {
-                            "heading": "Estate Planning",
-                            "items": [
-                                "Wills & Trusts",
-                                "Power of Attorney",
-                                "Health Care Directives",
-                                "Trust Funding"
-                            ]
-                        }
-                    ]
-                }
+        "services": {
+            "heroBanner": {
+                "heading": "Our Services Simplifying<br/>Your Legal Needs"
+            }
+        },
+        "about": {
+            "heroBanner": {
+                "heading": "Legal Expertise with<br/>a Personal Touch"
             },
-            "services": {
-                "heroBanner": {
-                    "heading": "Our Services Simplifying<br/>Your Legal Needs"
+            "getStarted": {
+                "heading": "Ready to get started?<br/>Let’s work together to protect your future!",
+                "cta": {
+                    "text": "Book an appointment now",
+                    "link": "/contact"
                 }
+            }
+        },
+        "contact": {
+            "heroBanner": {
+                "addOnClass": "contact-hero-banner",
+                "heading": "Get In Touch",
+                "description": "We believe in making the legal process as easy and <br class='d-none d-lg-inline-block'/>accessible as possible. Whether you’re planning for <br class='d-none d-lg-inline-block'/>the future or managing a growing business, we’re <br class='d-none d-lg-inline-block'/>here to help you every step of the way."
             },
-            "about": {
-                "heroBanner": {
-                    "heading": "Legal Expertise with<br/>a Personal Touch"
-                }
-            },
-            "contact": {
-                "heroBanner": {
-                    "addOnClass": "contact-hero-banner",
-                    "heading": "Get In Touch",
-                    "description": "We believe in making the legal process as easy and <br class='d-none d-lg-inline-block'/>accessible as possible. Whether you’re planning for <br class='d-none d-lg-inline-block'/>the future or managing a growing business, we’re <br class='d-none d-lg-inline-block'/>here to help you every step of the way."
-                },
-                "form": {
-                    "heading": "Please fill the form and we will contact you",
-                    "fields": {
-                        "name": {
-                            "label": "Name"
-                        },
-                        "email": {
-                            "label": "Email"
-                        },
-                        "phone": {
-                            "label": "Phone"
-                        },
-                        "reason": {
-                            "label": "Contact Reason"
-                        },
-                        "shouldKnow": {
-                            "label": "Anything we should know?"
-                        }
+            "form": {
+                "heading": "Please fill the form and we will contact you",
+                "fields": {
+                    "name": {
+                        "label": "Name"
                     },
-                    "btns": {
-                        "submit": {
-                            "text": "Get In touch"
-                        }
+                    "email": {
+                        "label": "Email"
+                    },
+                    "phone": {
+                        "label": "Phone"
+                    },
+                    "reason": {
+                        "label": "Contact Reason"
+                    },
+                    "shouldKnow": {
+                        "label": "Anything we should know?"
                     }
                 },
-                "reachOut": {
-                    "heading": "Reach Out",
-                    "description": "Looking for straightforward legal advice you can trust? Whether it’s securing your family’s future or <br class='d-none d-lg-inline-block'/>navigating business challenges, we’re here to help. Let’s work together to find solutions that fit <br class='d-none d-lg-inline-block'/>your unique needs. Schedule a consultation today and take the next step with confidence.",
-                    "columns": [
-                        {
-                            "heading": "Why Reach Out?",
-                            "items": [
-                                "Personalized Service",
-                                "Expert Guidance"
-                            ]
-                        },
-                        {
-                            "heading": "When to Reach Out?",
-                            "items": [
-                                "Estate Planning",
-                                "Business Law",
-                                "Flexible consultations via Zoom, tailored to fit your schedule"
-                            ]
-                        }
-                    ]
+                "btns": {
+                    "submit": {
+                        "text": "Get In touch"
+                    }
                 }
+            },
+            "getStarted": {
+                "heading": "Ready to get started?<br/>Let’s work together to protect your future!",
+                "cta": {
+                    "text": "Book an appointment now",
+                    "link": "/contact"
+                }
+            },
+            "reachOut": {
+                "heading": "Reach Out",
+                "description": "Looking for straightforward legal advice you can trust? Whether it’s securing your family’s future or <br class='d-none d-lg-inline-block'/>navigating business challenges, we’re here to help. Let’s work together to find solutions that fit <br class='d-none d-lg-inline-block'/>your unique needs. Schedule a consultation today and take the next step with confidence.",
+                "columns": [
+                    {
+                        "heading": "Why Reach Out?",
+                        "items": [
+                            "Personalized Service",
+                            "Expert Guidance"
+                        ]
+                    },
+                    {
+                        "heading": "When to Reach Out?",
+                        "items": [
+                            "Estate Planning",
+                            "Business Law",
+                            "Flexible consultations via Zoom, tailored to fit your schedule"
+                        ]
+                    }
+                ]
             }
         }
     }

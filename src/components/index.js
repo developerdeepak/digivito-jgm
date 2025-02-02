@@ -1,6 +1,6 @@
 import PageHeader from './pageHeader';
 import PageFooter from './pageFooter';
-import GetStarted from './getStarted';
+import BannerSideBySide from './bannerSideBySide';
 import TwoColumnListComponent from './twoColumnListComponent';
 import HeroBanner from './heroBanner';
 
@@ -8,7 +8,7 @@ const Components = {
     HeroBanner,
     PageHeader,
     PageFooter,
-    GetStarted,
+    BannerSideBySide,
     TwoColumnListComponent
 };
 

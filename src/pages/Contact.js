@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import Components from "../components";
 import AppData from '../data/data.json';
 import HeroBannerImage from '../images/contact-hero-banner-lg.jpg';
+import BannerImage from '../images/hand-shaking-business.jpg';
 
-const pageSpecificData = AppData.sections.pageSpecific.contact;
+const pageSpecificData = AppData.pages.contact;
 
 const ContactForm = () => {
     return (
@@ -47,7 +48,7 @@ const Contact = () => {
                 <ContactForm />
             </Components.HeroBanner>
             <Components.TwoColumnListComponent {...pageSpecificData.reachOut} addOnPadding={heroBannerExtraSpace} />
-            <Components.GetStarted />
+            <Components.BannerSideBySide {...pageSpecificData.getStarted} BannerImage={BannerImage} />
         </>
     );
 }

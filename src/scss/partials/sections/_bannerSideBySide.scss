@@ -1,16 +1,46 @@
-.get-started-section {
+.banner-side-by-side {
     .content {
         max-width: 741px;
+        gap: 24px;
 
         @include media-breakpoint-down(lg) {
             text-align: center;
+        }
+
+        @include media-breakpoint-up(lg) {
+            gap: 48px;
+        }
+    }
+
+    .text-content {
+        gap: 8px;
+
+        @include media-breakpoint-up(lg) {
+            gap: 16px;
+        }
+    }
+
+    .sub-heading {
+        @include media-breakpoint-up(md) {
+            font-size: 24px;
+        }
+    }
+
+    .banner-desc {
+        @include media-breakpoint-up(md) {
+            font-size: 20px;
+        }
+    }
+
+    .banner-disclaimer {
+        @include media-breakpoint-down(md) {
+            font-size: 12px;
         }
     }
 
     .cta {
         font-size: clamp(1rem, 0.8469rem + 0.6531vw, 1.5rem);
         width: clamp(21.9375rem, 19.284rem + 7.055vw, 27.75rem);
-        margin-top: clamp(1.5rem, 1.1359rem + 1.5534vw, 3rem);
     }
 
     .banner-container {
