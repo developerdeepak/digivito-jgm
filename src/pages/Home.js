@@ -9,7 +9,7 @@ const Home = () => {
     return (
         <>
             <Components.HeroBanner {...pageSpecificData.heroBanner} HeroImage={HeroBannerImage} />
-            <Components.TwoColumnListComponent {...pageSpecificData.practiceAreas} />
+            <Components.TwoColumnList {...pageSpecificData.practiceAreas} />
             <Components.BannerSideBySide {...pageSpecificData.scheduleFreeConsultation} BannerImage={ScheduleFreeConsultationImage} />
         </>
     );

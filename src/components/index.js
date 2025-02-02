@@ -1,15 +1,17 @@
+import HeroBanner from './heroBanner';
+import BannerSideBySide from './bannerSideBySide';
 import PageHeader from './pageHeader';
 import PageFooter from './pageFooter';
-import BannerSideBySide from './bannerSideBySide';
-import TwoColumnListComponent from './twoColumnListComponent';
-import HeroBanner from './heroBanner';
+import TwoColumnList from './twoColumnList';
+import TwoColumnTiles from './twoColumnTiles';
 
 const Components = {
     HeroBanner,
+    BannerSideBySide,
     PageHeader,
     PageFooter,
-    BannerSideBySide,
-    TwoColumnListComponent
+    TwoColumnList,
+    TwoColumnTiles
 };
 
 export default Components;

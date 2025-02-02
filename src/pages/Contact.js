@@ -47,7 +47,7 @@ const Contact = () => {
             <Components.HeroBanner {...pageSpecificData.heroBanner} HeroImage={HeroBannerImage} setHeroBannerExtraSpace={setHeroBannerExtraSpace}>
                 <ContactForm />
             </Components.HeroBanner>
-            <Components.TwoColumnListComponent {...pageSpecificData.reachOut} addOnPadding={heroBannerExtraSpace} />
+            <Components.TwoColumnList {...pageSpecificData.reachOut} addOnPadding={heroBannerExtraSpace} />
             <Components.BannerSideBySide {...pageSpecificData.getStarted} BannerImage={BannerImage} />
         </>
     );

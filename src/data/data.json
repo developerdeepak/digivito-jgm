@@ -192,6 +192,62 @@
         "services": {
             "heroBanner": {
                 "heading": "Our Services Simplifying<br/>Your Legal Needs"
+            },
+            "estatePlanning": {
+                "subheading": "PROTECT WHAT MATTERS MOST",
+                "heading": "Estate Planning",
+                "description": "Looking for straightforward legal advice you can trust? Whether it’s securing your family’s future or navigating <br class='d-none d-lg-inline-block'/>business challenges, we’re here to help. Let’s work together to find solutions that fit your unique needs. <br class='d-none d-lg-inline-block'/>Schedule a consultation today and take the next step with confidence.<br/><br/>We make the <u>estate planning</u> process easy and efficient. After an initial consultation, we’ll craft a plan tailored <br class='d-none d-lg-inline-block'/>to your needs and meet with you online to review everything before signing.",
+                "isDark": true,
+                "tiles": [
+                    {
+                        "title": "Wills and Trust",
+                        "detail": "Ensure your assets are distributed <br/>according to your wishes.",
+                        "icon": "WillTrustsPrimary"
+                    },
+                    {
+                        "title": "Power of Attorney",
+                        "detail": "Make sure the right people can make <br/>decisions for you in critical moments.",
+                        "icon": "POAPrimary"
+                    },
+                    {
+                        "title": "Health care Derivates",
+                        "detail": "Clearly outline your medical preferences.",
+                        "icon": "HealthCarePrimary"
+                    },
+                    {
+                        "title": "Trust Funding",
+                        "detail": "Ensure that your trust is properly funded <br/>to avoid probate.",
+                        "icon": "TrustFundingPrimary"
+                    }
+                ]
+            },
+            "businessSupport": {
+                "subheading": "SUPPORT FOR EVERY STAGE",
+                "heading": "Business",
+                "description": "From formation to acquisition, your business needs the right legal foundation to succeed. <br class='d-none d-lg-inline-block'/>We offer comprehensive business law services to protect your interests and help you thrive in <br class='d-none d-lg-inline-block'/>today’s competitive landscape.",
+                "isDark": false,
+                "tiles": [
+                    {
+                        "title": "Business Formation",
+                        "detail": "Whether you’re starting a sole <br/>proprietorship, LLC, or corporation, <br/>we’ll help you get set up the right way.",
+                        "icon": "BusinessFormarionPrimary"
+                    },
+                    {
+                        "title": "Contracts & Agreements",
+                        "detail": "Protect your business with properly drafted <br/>contracts, from employment agreements <br/>to partnership deals.",
+                        "icon": "ContractsAgreementsPrimary"
+                    },
+                    {
+                        "title": "Mergers & Acquisitions",
+                        "detail": "We provide expert guidance on buying, <br/>selling, and merging businesses.",
+                        "icon": "MergersAcquisitionsPrimary"
+                    },
+                    {
+                        "title": "Ongoing Counsel",
+                        "detail": "Need legal advice as your business grows? <br/>We’re here to help with strategic support <br/>on an as-needed basis.",
+                        "icon": "TrustFundingPrimary"
+                    }
+                ]
             }
         },
         "about": {

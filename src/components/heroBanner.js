@@ -12,10 +12,10 @@ class HeroBanner extends Component {
     setHeroBannerExtraSpace = () => {
         if (this.props.setHeroBannerExtraSpace) {
             let heroBanner = this.heroBannerRef.current;
-            let heroBannerContent = this.heroBannerRef.current.querySelector('.banner-content');
-            let heroBannerDim = '';
+            let heroBannerContent = '', heroBannerDim = '';
 
             if (heroBanner) {
+                heroBannerContent = heroBanner.querySelector('.banner-content');
                 heroBannerDim = heroBanner.getBoundingClientRect();
             }
 
