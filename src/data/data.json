@@ -153,6 +153,15 @@
         },
         "pageSpecific": {
             "home": {
+                "heroBanner": {
+                    "addOnClass": "home-hero-banner",
+                    "heading": "Guiding Your Future,<br/>Securing Your Business",
+                    "description": "From estate planning to business law, We provide <br class='d-none d-lg-inline-block' />personalized legal solutions for peace of mind.",
+                    "cta": {
+                        "text": "Book a free consultation",
+                        "link": "/contact"
+                    }
+                },
                 "practiceAreas": {
                     "heading": "Our Practice Areas",
                     "description": "Looking for straightforward legal advice you can trust? Whether it’s securing your family’s future or <br class='d-none d-lg-inline-block'/>navigating business challenges, we’re here to help. Let’s work together to find solutions that fit <br class='d-none d-lg-inline-block'/>your unique needs. Schedule a consultation today and take the next step with confidence.",
@@ -176,6 +185,16 @@
                             ]
                         }
                     ]
+                }
+            },
+            "services": {
+                "heroBanner": {
+                    "heading": "Our Services Simplifying<br/>Your Legal Needs"
+                }
+            },
+            "about": {
+                "heroBanner": {
+                    "heading": "Legal Expertise with<br/>a Personal Touch"
                 }
             },
             "contact": {

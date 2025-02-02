@@ -1,16 +1,16 @@
 import Components from "../components";
 import AppData from '../data/data.json';
-import HeroBannerImage from '../images/about-hero-banner-lg.jpg';
+import HeroBannerImage from '../images/services-hero-banner-lg.jpg';
 
 const pageSpecificData = AppData.sections.pageSpecific.services;
 
-const About = () => {
+const Services = () => {
+
     return (
         <>
             <Components.HeroBanner {...pageSpecificData.heroBanner} HeroImage={HeroBannerImage} />
-            <Components.GetStarted />
         </>
     );
-};
+}
 
-export default About;
+export default Services;
