@@ -53,7 +53,9 @@ class HeroBanner extends Component {
         }
 
         if (this.props.description && this.props.description.length > 0) {
-            bannerDesc = HTMLParser.parseHTML(this.props.description);
+            bannerDesc = (
+                <p className="banner-desc">{HTMLParser.parseHTML(this.props.description)}</p>
+            );
         }
 
         if (this.props.addOnClass && this.props.addOnClass.length > 0) {
@@ -73,7 +75,7 @@ class HeroBanner extends Component {
                 <img src={this.props.HeroImage} className="mw-100 p-0" alt="Hero banner" onLoad={this.setHeroBannerExtraSpace} />
                 <div className="col mw-1600 mx-auto text-white banner-content">
                     <h1 className="poppins-bold h2 m-0 banner-heading">{bannerHeading}</h1>
-                    <p className="banner-desc">{bannerDesc}</p>
+                    {bannerDesc}
                     {bannerCTA}
                     {this.props.children}
                 </div>

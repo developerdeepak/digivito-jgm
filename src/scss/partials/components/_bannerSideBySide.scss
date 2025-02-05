@@ -1,41 +1,36 @@
 .banner-side-by-side {
     .content {
         max-width: 741px;
-        gap: 24px;
+        gap: 1.5rem;
 
         @include media-breakpoint-down(lg) {
             text-align: center;
+            align-items: center;
         }
 
         @include media-breakpoint-up(lg) {
-            gap: 48px;
+            gap: 2.625vw;
         }
     }
 
     .text-content {
-        gap: 8px;
+        gap: 0.5rem;
 
         @include media-breakpoint-up(lg) {
-            gap: 16px;
+            gap: 1vw;
         }
     }
 
     .sub-heading {
-        @include media-breakpoint-up(md) {
-            font-size: 24px;
-        }
+        font-size: clamp(1rem, 0.5385rem + 0.9615vw, 1.5rem);
     }
 
     .banner-desc {
-        @include media-breakpoint-up(md) {
-            font-size: 20px;
-        }
+        font-size: clamp(0.75rem, 0.2885rem + 0.9615vw, 1.25rem);
     }
 
     .banner-disclaimer {
-        @include media-breakpoint-down(md) {
-            font-size: 12px;
-        }
+        font-size: clamp(0.625rem, 0.2788rem + 0.7212vw, 1rem);
     }
 
     .cta {
@@ -44,10 +39,6 @@
     }
 
     .banner-container {
-        @include media-breakpoint-down(xxxl) {
-            padding-right: 0;
-        }
-
         @include media-breakpoint-down(lg) {
             padding-left: 0;
         }

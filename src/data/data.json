@@ -148,7 +148,7 @@
             "heroBanner": {
                 "addOnClass": "home-hero-banner",
                 "heading": "Guiding Your Future,<br/>Securing Your Business",
-                "description": "From estate planning to business law, We provide <br class='d-none d-lg-inline-block' />personalized legal solutions for peace of mind.",
+                "description": "From estate planning to business law, We provide <br class='d-none d-xl-inline-block' />personalized legal solutions for peace of mind.",
                 "cta": {
                     "text": "Book a free consultation",
                     "link": "/contact"
@@ -156,7 +156,7 @@
             },
             "practiceAreas": {
                 "heading": "Our Practice Areas",
-                "description": "Looking for straightforward legal advice you can trust? Whether it’s securing your family’s future or <br class='d-none d-lg-inline-block'/>navigating business challenges, we’re here to help. Let’s work together to find solutions that fit <br class='d-none d-lg-inline-block'/>your unique needs. Schedule a consultation today and take the next step with confidence.",
+                "description": "Looking for straightforward legal advice you can trust? Whether it’s securing your family’s future or <br class='d-none d-xl-inline-block'/>navigating business challenges, we’re here to help. Let’s work together to find solutions that fit <br class='d-none d-xl-inline-block'/>your unique needs. Schedule a consultation today and take the next step with confidence.",
                 "columns": [
                     {
                         "heading": "Business",
@@ -181,8 +181,8 @@
             "scheduleFreeConsultation": {
                 "subheading": "START YOUR LEGAL JOURNEY TODAY",
                 "heading": "Schedule Your Free <br/>Consultation",
-                "description": "From business growth to family planning, we’re here to help you <br class='d-none d-lg-inline-block'/>navigate every legal step. Schedule your complimentary 30-minute <br class='d-none d-lg-inline-block'/>consultation today and start planning for your future with confidence.",
-                "disclaimer": "*Disclaimer: The free consultation does not establish an attorney-client relationship. <br class='d-none d-lg-inline-block'/>Legal advice is provided only upon engagement of services.",
+                "description": "From business growth to family planning, we’re here to help you navigate every legal step. Schedule your complimentary 30-minute consultation today and start planning for your future with confidence.",
+                "disclaimer": "*Disclaimer: The free consultation does not establish an attorney-client relationship. Legal advice is provided only upon engagement of services.",
                 "cta": {
                     "text": "Contact us",
                     "link": "/contact"
@@ -195,12 +195,12 @@
             },
             "ourServices": {
                 "heading": "Our Services",
-                "description": "We strive to offer tailored legal services to meet your specific goals. Whether you’re looking to <br class='d-none d-lg-inline-block'/>protect your family’s future through estate planning or navigate the complexities of business law, <br class='d-none d-lg-inline-block'/>we provide personalized, expert guidance every step of the way."
+                "description": "We strive to offer tailored legal services to meet your specific goals. Whether you’re looking to <br class='d-none d-xl-inline-block'/>protect your family’s future through estate planning or navigate the complexities of business law, <br class='d-none d-xl-inline-block'/>we provide personalized, expert guidance every step of the way."
             },
             "estatePlanning": {
                 "subheading": "PROTECT WHAT MATTERS MOST",
                 "heading": "Estate Planning",
-                "description": "Looking for straightforward legal advice you can trust? Whether it’s securing your family’s future or navigating <br class='d-none d-lg-inline-block'/>business challenges, we’re here to help. Let’s work together to find solutions that fit your unique needs. <br class='d-none d-lg-inline-block'/>Schedule a consultation today and take the next step with confidence.<br/><br/>We make the <u>estate planning</u> process easy and efficient. After an initial consultation, we’ll craft a plan tailored <br class='d-none d-lg-inline-block'/>to your needs and meet with you online to review everything before signing.",
+                "description": "Looking for straightforward legal advice you can trust? Whether it’s securing your family’s future or navigating <br class='d-none d-xl-inline-block'/>business challenges, we’re here to help. Let’s work together to find solutions that fit your unique needs. <br class='d-none d-xl-inline-block'/>Schedule a consultation today and take the next step with confidence.<br/><br/>We make the <u>estate planning</u> process easy and efficient. After an initial consultation, we’ll craft a plan tailored <br class='d-none d-xl-inline-block'/>to your needs and meet with you online to review everything before signing.",
                 "isDark": true,
                 "tiles": [
                     {
@@ -228,7 +228,7 @@
             "businessSupport": {
                 "subheading": "SUPPORT FOR EVERY STAGE",
                 "heading": "Business",
-                "description": "From formation to acquisition, your business needs the right legal foundation to succeed. <br class='d-none d-lg-inline-block'/>We offer comprehensive business law services to protect your interests and help you thrive in <br class='d-none d-lg-inline-block'/>today’s competitive landscape.",
+                "description": "From formation to acquisition, your business needs the right legal foundation to succeed. <br class='d-none d-xl-inline-block'/>We offer comprehensive business law services to protect your interests and help you thrive in <br class='d-none d-xl-inline-block'/>today’s competitive landscape.",
                 "isDark": false,
                 "tiles": [
                     {
@@ -270,7 +270,7 @@
             "heroBanner": {
                 "addOnClass": "contact-hero-banner",
                 "heading": "Get In Touch",
-                "description": "We believe in making the legal process as easy and <br class='d-none d-lg-inline-block'/>accessible as possible. Whether you’re planning for <br class='d-none d-lg-inline-block'/>the future or managing a growing business, we’re <br class='d-none d-lg-inline-block'/>here to help you every step of the way."
+                "description": "We believe in making the legal process as easy and <br class='d-none d-xl-inline-block'/>accessible as possible. Whether you’re planning for <br class='d-none d-xl-inline-block'/>the future or managing a growing business, we’re <br class='d-none d-xl-inline-block'/>here to help you every step of the way."
             },
             "form": {
                 "heading": "Please fill the form and we will contact you",
@@ -306,7 +306,7 @@
             },
             "reachOut": {
                 "heading": "Reach Out",
-                "description": "Looking for straightforward legal advice you can trust? Whether it’s securing your family’s future or <br class='d-none d-lg-inline-block'/>navigating business challenges, we’re here to help. Let’s work together to find solutions that fit <br class='d-none d-lg-inline-block'/>your unique needs. Schedule a consultation today and take the next step with confidence.",
+                "description": "Looking for straightforward legal advice you can trust? Whether it’s securing your family’s future or <br class='d-none d-xl-inline-block'/>navigating business challenges, we’re here to help. Let’s work together to find solutions that fit <br class='d-none d-xl-inline-block'/>your unique needs. Schedule a consultation today and take the next step with confidence.",
                 "columns": [
                     {
                         "heading": "Why Reach Out?",

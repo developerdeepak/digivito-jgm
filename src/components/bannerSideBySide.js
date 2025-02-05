@@ -44,7 +44,7 @@ const BannerCTA = (props) => {
 const BannerSideBySide = (props) => {
     let bannerSubHeading = '', bannerHeading = '', bannerDesc = '', bannerDisclaimer = '', bannerCTA = '';
 
-    if(props.subheading && props.subheading.length > 0) {
+    if (props.subheading && props.subheading.length > 0) {
         bannerSubHeading = <BannerSubHeading {...props} />;
     }
 
@@ -65,26 +65,46 @@ const BannerSideBySide = (props) => {
     }
 
     return (
-        <div className="row bg-primary banner-side-by-side">
-            <div className="col mw-1600 mx-auto">
-                <div className="row align-items-center">
-                    <div className="col-12 col-lg-6 order-lg-1 banner-container">
-                        <img src={props.BannerImage} className="mw-100" alt="Ready to consult banner" />
-                    </div>
-                    <div className="col-12 col-lg-6 order-lg-0 d-flex align-items-center py-5 py-lg-0 text-container">
-                        <div className="content d-flex flex-column">
-                            <div className="text-content d-flex flex-column">
-                                {bannerSubHeading}
-                                {bannerHeading}
-                                {bannerDesc}
-                                {bannerDisclaimer}
+        <>
+            <div className="row bg-primary banner-side-by-side align-items-center justify-content-center">
+                <div className="col">
+                    <div className="row align-items-center justify-content-end">
+                        <div className="col-12 col-lg-6 order-lg-1 banner-container pe-0">
+                            <img src={props.BannerImage} className="mw-100" alt="Ready to consult banner" />
+                        </div>
+                        <div className="d-lg-none col-12 col-lg-6 order-lg-0 d-flex align-items-center py-5 py-lg-0 text-container">
+                            <div className="content d-flex flex-column">
+                                <div className="text-content d-flex flex-column">
+                                    {bannerSubHeading}
+                                    {bannerHeading}
+                                    {bannerDesc}
+                                    {bannerDisclaimer}
+                                </div>
+                                {bannerCTA}
                             </div>
-                            {bannerCTA}
+                        </div>
+                    </div>
+                </div>
+                <div className="col mw-1600 mx-auto d-none d-lg-block position-absolute left-0 right-0">
+                    <div className="row align-items-center">
+                        <div className="col-12 col-lg-6 order-lg-1 banner-container d-lg-none">
+                            <img src={props.BannerImage} className="mw-100" alt="Ready to consult banner" />
+                        </div>
+                        <div className="col-12 col-lg-6 order-lg-0 d-flex align-items-center py-5 py-lg-0 text-container">
+                            <div className="content d-flex flex-column">
+                                <div className="text-content d-flex flex-column">
+                                    {bannerSubHeading}
+                                    {bannerHeading}
+                                    {bannerDesc}
+                                    {bannerDisclaimer}
+                                </div>
+                                {bannerCTA}
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 }
 
