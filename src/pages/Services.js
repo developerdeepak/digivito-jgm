@@ -9,6 +9,7 @@ const Services = () => {
     return (
         <>
             <Components.HeroBanner {...pageSpecificData.heroBanner} HeroImage={HeroBannerImage} />
+            <Components.HeadingAndParagraph {...pageSpecificData.ourServices} />
             <Components.TwoColumnTiles {...pageSpecificData.estatePlanning} />
             <Components.TwoColumnTiles {...pageSpecificData.businessSupport} />
         </>

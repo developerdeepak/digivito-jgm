@@ -1,0 +1,21 @@
+.heading-paragraph-comp {
+    padding: 40px 0;
+    
+    @include media-breakpoint-up(md) {
+        padding: 94px 0 138px;
+    }
+
+    > .col {
+        gap: 16px;
+
+        @include media-breakpoint-up(md) {
+            gap: 26px;
+        }
+    }
+
+    .description {
+        @include media-breakpoint-up(md) {
+            font-size: 22px;
+        }
+    }
+}

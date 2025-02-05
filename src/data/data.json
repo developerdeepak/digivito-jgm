@@ -193,6 +193,10 @@
             "heroBanner": {
                 "heading": "Our Services Simplifying<br/>Your Legal Needs"
             },
+            "ourServices": {
+                "heading": "Our Services",
+                "description": "We strive to offer tailored legal services to meet your specific goals. Whether you’re looking to <br class='d-none d-lg-inline-block'/>protect your family’s future through estate planning or navigate the complexities of business law, <br class='d-none d-lg-inline-block'/>we provide personalized, expert guidance every step of the way."
+            },
             "estatePlanning": {
                 "subheading": "PROTECT WHAT MATTERS MOST",
                 "heading": "Estate Planning",
