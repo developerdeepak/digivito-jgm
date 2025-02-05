@@ -1,0 +1,98 @@
+.about-ceo-comp {
+    background-image: url(../../../images/corner-tile-left.png), url(../../../images/corner-tile-right.png);
+    background-position: left bottom, right top;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 120px;
+    padding: 81px 0 30px;
+
+    @include media-breakpoint-up(xl) {
+        padding: 141px 0 60px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        background-size: 280px;
+    }
+
+    .content-container {
+        gap: 50px;
+
+        @include media-breakpoint-up(sm) {
+            gap: 80px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            gap: 120px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            gap: 0;
+        }
+    }
+
+    .titles-container {
+        @include media-breakpoint-down(xl) {
+            text-align: center;
+        }
+    }
+
+    .about-ceo-content {
+        padding: 45px 30px 30px;
+
+        @include media-breakpoint-down(xl) {
+            text-align: center;
+            border-radius: 12px;
+        }
+
+        @include media-breakpoint-up(sm) {
+            padding-top: 75px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding-top: 100px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding: 90px 60px 60px;
+            font-size: 22x;
+        }
+
+        img {
+            max-width: 100px;
+            top: -50px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+
+            @include media-breakpoint-up(sm) {
+                max-width: 150px;
+                top: -75px;
+            }
+
+            @include media-breakpoint-up(lg) {
+                max-width: 200px;
+                top: -100px;
+            }
+
+            @include media-breakpoint-up(xl) {
+                max-width: 325px;
+                top: -81px;
+                left: -162px;
+                margin-left: 0;
+            }
+        }
+
+        h2 {
+            @include media-breakpoint-up(xl) {
+                margin-left: 140px;
+            }
+        }
+
+        .description {
+            padding-top: 30px;
+
+            @include media-breakpoint-up(xl) {
+                padding-top: 80px;
+            }
+        }
+    }
+}

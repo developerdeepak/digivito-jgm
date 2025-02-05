@@ -47,12 +47,12 @@ const ComponentTile = (props) => {
     }
 
     return (
-        <div class="g-col-12 g-col-md-6">
-            <div class={cardClassList}>
-                <div class="card-body d-flex justify-content-between align-items-start text-start">
-                    <div class="tile-text-content">
-                        <h3 class="card-title poppins-bold text-primary">{HTMLParser.parseHTML(props.title)}</h3>
-                        <p class="card-text">{HTMLParser.parseHTML(props.detail)}</p>
+        <div className="g-col-12 g-col-md-6">
+            <div className={cardClassList}>
+                <div className="card-body d-flex justify-content-between align-items-start text-start">
+                    <div className="tile-text-content">
+                        <h3 className="card-title poppins-bold text-primary">{HTMLParser.parseHTML(props.title)}</h3>
+                        <p className="card-text">{HTMLParser.parseHTML(props.detail)}</p>
                     </div>
                     <img src={Icons[props.icon]} className="mw-100 p-0" alt="Tile icon" />
                 </div>
@@ -95,7 +95,7 @@ const TwoColumnTiles = (props) => {
                 {subheading}
                 {heading}
                 {description}
-                {tiles && tiles.length > 0 ? <div class="tiles grid mx-auto">{tiles}</div> : ''}
+                {tiles && tiles.length > 0 ? <div className="tiles grid mx-auto">{tiles}</div> : ''}
             </div>
         </div>
     );

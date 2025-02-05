@@ -9,6 +9,7 @@ const About = () => {
     return (
         <>
             <Components.HeroBanner {...pageSpecificData.heroBanner} HeroImage={HeroBannerImage} />
+            <Components.AboutCEO />
             <Components.BannerSideBySide {...pageSpecificData.getStarted} BannerImage={BannerImage} />
         </>
     );
