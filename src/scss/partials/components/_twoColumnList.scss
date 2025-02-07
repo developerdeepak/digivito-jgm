@@ -3,6 +3,7 @@
     background-position: left bottom, right top;
     background-repeat: no-repeat, no-repeat;
     background-size: 120px;
+    background-color: $off-white-1;
     padding: 64px 0;
 
     @include media-breakpoint-up(lg) {

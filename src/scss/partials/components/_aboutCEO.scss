@@ -3,6 +3,7 @@
     background-position: left bottom, right top;
     background-repeat: no-repeat, no-repeat;
     background-size: 120px;
+    background-color: $off-white-1;
     padding: 81px 0 30px;
 
     @include media-breakpoint-up(xl) {
@@ -53,7 +54,7 @@
 
         @include media-breakpoint-up(xl) {
             padding: 90px 60px 60px;
-            font-size: 22x;
+            font-size: 22px;
         }
 
         img {

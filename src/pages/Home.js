@@ -11,6 +11,7 @@ const Home = () => {
             <Components.HeroBanner {...pageSpecificData.heroBanner} HeroImage={HeroBannerImage} />
             <Components.TwoColumnList {...pageSpecificData.practiceAreas} />
             <Components.BannerSideBySide {...pageSpecificData.scheduleFreeConsultation} BannerImage={ScheduleFreeConsultationImage} />
+            <Components.QuoteCEO />
         </>
     );
 };
