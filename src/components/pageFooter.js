@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import AppData from '../data/data.json';
-import logoWhite from '../images/logo-white.svg';
 import Helpers from '../helpers';
 import Icons from "../images/icons";
 
@@ -82,7 +81,7 @@ const PageFooter = () => {
             <div className="row navigation-row bg-secondary">
                 <div className="col mx-auto mw-1600">
                     <div className="logo-container text-center border-bottom border-white d-none d-lg-block">
-                        <img src={logoWhite} className="footer-logo" alt="J.G.Miller header logo" />
+                        <img src={Icons.LogoWhite} className="footer-logo" alt="J.G.Miller header logo" />
                     </div>
                     <div className="footer-nav-container">
                         <div className="row flex-column flex-lg-row">

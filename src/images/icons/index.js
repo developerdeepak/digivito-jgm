@@ -7,6 +7,8 @@ import InstagramFill from './instagram-filled.svg';
 import LawStatue from './law-statue-icon.svg';
 import LinkedInBoxFillWhite from './linkedin-box-fill.svg';
 import LocationWhite from './location-white.svg';
+import LogoPrimary from './logo-primary.svg';
+import LogoWhite from './logo-white.svg';
 import MailIconBlack from './mail.svg';
 import MergersAcquisitionsPrimary from './mergers-acquisitions-primary.svg';
 import MobileMenu from './mobile-menu.svg';
@@ -32,6 +34,8 @@ const Icons = {
     InstagramFill,
     LawStatue,
     LinkedInBoxFillWhite,
+    LogoPrimary,
+    LogoWhite,
     LocationWhite,
     MailIconBlack,
     MergersAcquisitionsPrimary,
