@@ -1,7 +1,8 @@
 {
     "contact": {
         "phone": "(801) 872-9889",
-        "mail": "jgmiller@domain.com"
+        "mail": "jgmiller@domain.com",
+        "address": "Gilbert, AZ Office<br/>7400 S Power Road<br/>Building 1, Suite 101<br/>Gilbert, AZ 85297"
     },
     "navItems": [
         {
@@ -186,6 +187,13 @@
                 "cta": {
                     "text": "Contact us",
                     "link": "/contact"
+                }
+            },
+            "getInTouch": {
+                "heading": "Get In Touch",
+                "description": "Problems trying to resolve the conflict between <br class='d-none d-md-inline-block' />the two major realms of Classical physics: Newtonian mechanics.",
+                "contact": {
+                    "mailBtnText": "Get in touch"
                 }
             }
         },

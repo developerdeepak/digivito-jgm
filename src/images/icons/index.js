@@ -6,14 +6,17 @@ import HealthCarePrimary from './health-care-primary.svg';
 import InstagramFill from './instagram-filled.svg';
 import LawStatue from './law-statue-icon.svg';
 import LinkedInBoxFillWhite from './linkedin-box-fill.svg';
+import LocationBigPrimary from './location-big-primary.svg';
 import LocationWhite from './location-white.svg';
 import LogoPrimary from './logo-primary.svg';
 import LogoWhite from './logo-white.svg';
 import MailIconBlack from './mail.svg';
+import MailPrimary from './mail-primary.svg';
 import MergersAcquisitionsPrimary from './mergers-acquisitions-primary.svg';
 import MobileMenu from './mobile-menu.svg';
 import MsgIconWhite from './message-white.svg';
 import PhoneIconBlack from './phone-black.svg';
+import PhonePrimary from './phone-primary.svg';
 import POAPrimary from './poa-primary.svg';
 import TrustFundingPrimary from './trust-funding-primary.svg';
 import TwitterFillWhite from './twitter-fill.svg';
@@ -36,12 +39,15 @@ const Icons = {
     LinkedInBoxFillWhite,
     LogoPrimary,
     LogoWhite,
+    LocationBigPrimary,
     LocationWhite,
     MailIconBlack,
+    MailPrimary,
     MergersAcquisitionsPrimary,
     MobileMenu,
     MsgIconWhite,
     PhoneIconBlack,
+    PhonePrimary,
     POAPrimary,
     TrustFundingPrimary,
     TwitterFillWhite,
