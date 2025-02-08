@@ -9,6 +9,7 @@ import QuoteCEO from './quoteCEO';
 import Testimonials from './testimonials';
 import TwoColumnList from './twoColumnList';
 import TwoColumnTiles from './twoColumnTiles';
+import WhyChooseUs from './whyChooseUs';
 
 const Components = {
     AboutCEO,
@@ -21,7 +22,8 @@ const Components = {
     QuoteCEO,
     Testimonials,
     TwoColumnList,
-    TwoColumnTiles
+    TwoColumnTiles,
+    WhyChooseUs
 };
 
 export default Components;
