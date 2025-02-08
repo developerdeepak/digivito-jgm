@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/digivito-jgm/static/css/main.daafc17a.css",
-    "main.js": "/digivito-jgm/static/js/main.f14ee34d.js",
+    "main.js": "/digivito-jgm/static/js/main.a971351e.js",
     "static/js/488.4c1ea894.chunk.js": "/digivito-jgm/static/js/488.4c1ea894.chunk.js",
     "static/media/hand-shaking-business.jpg": "/digivito-jgm/static/media/hand-shaking-business.b61a2a949b1fa0238e63.jpg",
     "static/media/contact-hero-banner-lg.jpg": "/digivito-jgm/static/media/contact-hero-banner-lg.73245d76902806364bcc.jpg",
@@ -42,11 +42,11 @@
     "static/media/video-white.svg": "/digivito-jgm/static/media/video-white.861ed1ede7905ffbe402bc17fa0c3ae6.svg",
     "static/media/mobile-menu.svg": "/digivito-jgm/static/media/mobile-menu.f78d37f4ccc738282dd3fbd811508d10.svg",
     "main.daafc17a.css.map": "/digivito-jgm/static/css/main.daafc17a.css.map",
-    "main.f14ee34d.js.map": "/digivito-jgm/static/js/main.f14ee34d.js.map",
+    "main.a971351e.js.map": "/digivito-jgm/static/js/main.a971351e.js.map",
     "488.4c1ea894.chunk.js.map": "/digivito-jgm/static/js/488.4c1ea894.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.daafc17a.css",
-    "static/js/main.f14ee34d.js"
+    "static/js/main.a971351e.js"
   ]
 }
