@@ -6,6 +6,7 @@ import HeroBanner from './heroBanner';
 import PageFooter from './pageFooter';
 import PageHeader from './pageHeader';
 import QuoteCEO from './quoteCEO';
+import Testimonials from './testimonials';
 import TwoColumnList from './twoColumnList';
 import TwoColumnTiles from './twoColumnTiles';
 
@@ -18,6 +19,7 @@ const Components = {
     PageFooter,
     PageHeader,
     QuoteCEO,
+    Testimonials,
     TwoColumnList,
     TwoColumnTiles
 };

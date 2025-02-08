@@ -18,11 +18,11 @@ import MsgIconWhite from './message-white.svg';
 import PhoneIconBlack from './phone-black.svg';
 import PhonePrimary from './phone-primary.svg';
 import POAPrimary from './poa-primary.svg';
+import TestimonialUser from './testimonial-user.svg';
 import TrustFundingPrimary from './trust-funding-primary.svg';
 import TwitterFillWhite from './twitter-fill.svg';
 import VideoCallWhite from './video-white.svg';
 import WillTrustsPrimary from './wills-trusts-primary.svg';
-
 import CEOQuoteLg from './ceo-quote-lg.svg';
 import CEOQuoteSm from './ceo-quote-sm.svg';
 
@@ -49,6 +49,7 @@ const Icons = {
     PhoneIconBlack,
     PhonePrimary,
     POAPrimary,
+    TestimonialUser,
     TrustFundingPrimary,
     TwitterFillWhite,
     VideoCallWhite,

@@ -27,7 +27,7 @@ const GetInTouch = (props) => {
                             <a href={"mailto:" + props.contact.mail} className="text-decoration-none contact-email d-flex flex-column align-items-center">
                                 <img src={Icons.MailPrimary} alt="Mail primary icon" />
                                 <span className="text-black">{props.contact.mail}</span>
-                                <button className="btn btn-outline-primary rounded-pill">{props.contact.mailBtnText}</button>
+                                <button className="btn btn-outline-primary rounded-pill poppins-bold">{props.contact.mailBtnText}</button>
                             </a>
                         </div>
                     </div>

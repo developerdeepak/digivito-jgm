@@ -189,6 +189,27 @@
                     "link": "/contact"
                 }
             },
+            "testimonials": {
+                "subheading": "TESTIMONIALS",
+                "heading": "What Our Clients <br />Are Saying",
+                "items": [
+                    {
+                        "isActive": true,
+                        "username": "Denise R.",
+                        "comment": "“ I hired Jon to update my family trust and to revise two operating agreements for my LLC's. Jon was very professional, courteous, kind, showed integrity and was reasonably priced. Jon gave me some advice on how to handle a problem we had with one of my LLC's, I was very impressed! I was so pleased with his work I referred my sister, brother and mother-in law to him! ”"
+                    },
+                    {
+                        "isActive": false,
+                        "username": "Denise R.",
+                        "comment": "“ I hired Jon to update my family trust and to revise two operating agreements for my LLC's. Jon was very professional, courteous, kind, showed integrity and was reasonably priced. Jon gave me some advice on how to handle a problem we had with one of my LLC's, I was very impressed! I was so pleased with his work I referred my sister, brother and mother-in law to him! ”"
+                    },
+                    {
+                        "isActive": false,
+                        "username": "Denise R.",
+                        "comment": "“ I hired Jon to update my family trust and to revise two operating agreements for my LLC's. Jon was very professional, courteous, kind, showed integrity and was reasonably priced. Jon gave me some advice on how to handle a problem we had with one of my LLC's, I was very impressed! I was so pleased with his work I referred my sister, brother and mother-in law to him! ”"
+                    }
+                ]
+            },
             "getInTouch": {
                 "heading": "Get In Touch",
                 "description": "Problems trying to resolve the conflict between <br class='d-none d-md-inline-block' />the two major realms of Classical physics: Newtonian mechanics.",

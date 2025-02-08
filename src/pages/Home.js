@@ -19,6 +19,7 @@ const Home = () => {
             <Components.TwoColumnList {...pageSpecificData.practiceAreas} />
             <Components.BannerSideBySide {...pageSpecificData.scheduleFreeConsultation} BannerImage={ScheduleFreeConsultationImage} />
             <Components.QuoteCEO />
+            <Components.Testimonials {...pageSpecificData.testimonials} />
             <Components.GetInTouch {...getInTouchData} />
         </>
     );
