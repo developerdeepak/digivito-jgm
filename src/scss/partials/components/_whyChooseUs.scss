@@ -1,0 +1,9 @@
+.why-choose-banner {
+    @include media-breakpoint-up(lg) {
+        padding: 80px 0;
+    }
+
+    .desktop-banner {
+        max-width: 650px;
+    }
+}

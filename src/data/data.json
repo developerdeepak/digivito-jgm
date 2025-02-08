@@ -195,7 +195,11 @@
                 "subheading": "WHY CHOOSE US",
                 "isSubheadingPrimary": true,
                 "heading": "Let Our <br class='d-md-none' />Experience<br/>Be Your Guide",
-                "description": "Legal Solutions for Families and Businesses<br/><br/>At the Law Office of Jonathan Miller, we specialize in estate planning, business law, and providing personalized legal services to clients in Salt Lake City, Phoenix, and beyond.<br/><br/>Whether you need to protect your family's future, navigate complex business transactions, or ensure compliance with state laws, we offer trusted counsel and tailored solutions.<br/><br/>With years of experience in multiple states, we're here to ensure your legal needs are met with professionalism and care."
+                "description": "Legal Solutions for Families and Businesses<br/><br/>At the Law Office of Jonathan Miller, we specialize in estate planning, business law, and providing personalized legal services to clients in Salt Lake City, Phoenix, and beyond.<br/><br/>Whether you need to protect your family's future, navigate complex business transactions, or ensure compliance with state laws, we offer trusted counsel and tailored solutions.<br/><br/>With years of experience in multiple states, we're here to ensure your legal needs are met with professionalism and care.",
+                "cta": {
+                    "text": "Contact us",
+                    "link": "/contact"
+                }
             },
             "testimonials": {
                 "subheading": "TESTIMONIALS",
