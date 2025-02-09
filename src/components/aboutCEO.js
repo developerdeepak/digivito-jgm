@@ -16,7 +16,7 @@ const AboutCEO = (props) => {
                     </div>
                     <div className="col-12 col-xl-7">
                         <div className="about-ceo-content position-relative bg-dark">
-                            <img src={ceoRoundImage} className="position-absolute" alt="CEO" />
+                            <img src={ceoRoundImage} className="position-absolute" alt="CEO" loading="lazy" />
                             <h2 className="h2 mb-0 poppins-bold text-primary">{props.name}</h2>
                             <div className="text-white description">
                                 {HTMLParser.parseHTML(props.details)}

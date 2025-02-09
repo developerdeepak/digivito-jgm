@@ -28,11 +28,11 @@ const PageHeader = () => {
             <div className="row contact-row">
                 <div className="col d-flex justify-content-center justify-content-lg-end align-items-center mx-auto mw-1600">
                     <a href={"tel:" + AppData.contact.phone} className="poppins-medium text-black text-decoration-none d-flex align-items-center contact-phone">
-                        <img src={Icons.PhoneIconBlack} className="phone-icon contact-icon" alt="phone icon" />
+                        <img src={Icons.PhoneIconBlack} className="phone-icon contact-icon" alt="phone icon" loading="lazy" />
                         <span>{AppData.contact.phone}</span>
                     </a>
                     <a href={"mailto:" + AppData.contact.mail} className="poppins-medium text-black text-decoration-none d-flex align-items-center contact-mail">
-                        <img src={Icons.MailIconBlack} className="mail-icon contact-icon" alt="mail icon" />
+                        <img src={Icons.MailIconBlack} className="mail-icon contact-icon" alt="mail icon" loading="lazy" />
                         <span>{AppData.contact.mail}</span>
                     </a>
                 </div>
@@ -41,16 +41,19 @@ const PageHeader = () => {
                 <nav className="navbar navbar-dark bg-dark navbar-expand-lg mx-auto mw-1600">
                     <div className="container-fluid">
                         <Link className="navbar-brand" to="/">
-                            <img src={Icons.LogoPrimary} className="header-logo" alt="J.G.Miller header logo" />
+                            <picture>
+                                <source media="(min-width:992px)" width="270" height="auto" srcSet={Icons.LogoPrimary} />
+                                <img src={Icons.LogoPrimary} width="205" height="auto" className="header-logo" alt="J.G.Miller header logo" loading="lazy" />
+                            </picture>
                         </Link>
                         <button className="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon w-auto h-auto">
-                                <img src={Icons.MobileMenu} className="mobile-menu-icon" alt="Mobile menu" />
+                                <img src={Icons.MobileMenu} className="mobile-menu-icon" alt="Mobile menu" loading="lazy" />
                             </span>
                         </button>
                         <div className="offcanvas offcanvas-end border-start-0 text-bg-dark" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                             <div className="offcanvas-header border-bottom">
-                                <img src={Icons.LogoPrimary} className="header-logo" alt="J.G.Miller header logo" />
+                                <img src={Icons.LogoPrimary} className="header-logo" alt="J.G.Miller header logo" loading="lazy" />
                                 <button type="button" className="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
                             <div className="offcanvas-body align-items-center">

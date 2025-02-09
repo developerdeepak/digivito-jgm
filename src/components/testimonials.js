@@ -10,9 +10,9 @@ const TestimonialCarouselItem = (props) => {
 
     return (
         <div className={itemClasses}>
-            <img src={Icons.TestimonialUser} alt="testimonial user" />
+            <img src={Icons.TestimonialUser} alt="testimonial user" loading="lazy" />
             <div className="user-comment-detail bg-dark">
-                <h5 className="poppins-bold text-primary mb-3 text-center text-lg-start">{props.username}</h5>
+                <h4 className="h5 poppins-bold text-primary mb-3 text-center text-lg-start">{props.username}</h4>
                 <p className="mb-0">{HTMLParser.parseHTML(props.comment)}</p>
             </div>
         </div>
@@ -22,7 +22,7 @@ const TestimonialCarouselItem = (props) => {
 const Testimonials = (props) => {
     let carouselItems = [];
 
-    if(props.items && props.items.length > 0) {
+    if (props.items && props.items.length > 0) {
         props.items.forEach((item, index) => {
             carouselItems.push(
                 <TestimonialCarouselItem {...item} key={index} />
@@ -34,9 +34,9 @@ const Testimonials = (props) => {
         <div className="row testimonials-row">
             <div className="col mw-1600 mx-auto">
                 <div className="row align-items-center">
-                    <div className="col-12 col-lg-5 text-center text-lg-start">
-                        <h3 className="text-primary poppins-bold mb-0">{props.subheading}</h3>
+                    <div className="col-12 col-lg-5 text-center text-lg-start d-flex flex-column-reverse">
                         <h2 className="h2 poppins-bold mb-0">{HTMLParser.parseHTML(props.heading)}</h2>
+                        <h3 className="text-primary poppins-bold mb-0">{props.subheading}</h3>
                     </div>
                     <div className="col-12 col-lg-7 d-flex flex-column align-items-center">
                         <div id="testimonialsSlider" className="carousel slide text-white text-center" data-bs-ride="carousel">

@@ -46,6 +46,7 @@
 
     .carousel-indicators {
         margin-top: 40px;
+        gap: 12px;
 
         @include media-breakpoint-up(lg) {
             margin-left: 56px;

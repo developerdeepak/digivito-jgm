@@ -54,7 +54,7 @@ const ComponentTile = (props) => {
                         <h3 className="card-title poppins-bold text-primary">{HTMLParser.parseHTML(props.title)}</h3>
                         <p className="card-text">{HTMLParser.parseHTML(props.detail)}</p>
                     </div>
-                    <img src={Icons[props.icon]} className="mw-100 p-0" alt="Tile icon" />
+                    <img src={Icons[props.icon]} className="mw-100 p-0" alt="Tile icon" loading="lazy" />
                 </div>
             </div>
         </div>

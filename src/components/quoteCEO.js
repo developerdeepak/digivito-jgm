@@ -6,7 +6,7 @@ const QuoteCEO = () => {
             <div className="col mw-1600 mx-auto text-center">
                 <picture>
                     <source media="(min-width:1024px)" srcSet={Icons.CEOQuoteLg} />
-                    <img src={Icons.CEOQuoteSm} alt="CEO Quote message" className="mw-100" />
+                    <img src={Icons.CEOQuoteSm} alt="CEO Quote message" className="mw-100" loading="lazy" />
                 </picture>
             </div>
         </div>

@@ -72,7 +72,7 @@ class HeroBanner extends Component {
 
         return (
             <div className={bannerClasses} ref={this.heroBannerRef}>
-                <img src={this.props.HeroImage} className="mw-100 p-0" alt="Hero banner" onLoad={this.setHeroBannerExtraSpace} />
+                <img src={this.props.HeroImage} className="mw-100 p-0" alt="Hero banner" onLoad={this.setHeroBannerExtraSpace} loading="eager" />
                 <div className="col mw-1600 mx-auto text-white banner-content">
                     <h1 className="poppins-bold h2 m-0 banner-heading">{bannerHeading}</h1>
                     {bannerDesc}
