@@ -40,6 +40,7 @@
 
             span {
                 z-index: 1;
+                background-color: $off-white-1;
 
                 @include media-breakpoint-up(lg) {
                     padding-right: 1rem;

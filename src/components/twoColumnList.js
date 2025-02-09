@@ -16,7 +16,7 @@ const ListColumn = (props) => {
     return (
         <div className="col list">
             <h4 className="poppins-bold text-primary text-uppercase position-relative h4">
-                <span className="bg-white">{props.heading}</span>
+                <span>{props.heading}</span>
             </h4>
             <ul className="list-group list-group-flush">
                 {columnItems}

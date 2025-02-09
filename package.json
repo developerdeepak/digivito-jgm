@@ -5,7 +5,6 @@
   "dependencies": {
     "bootstrap": "^5.3.3",
     "cra-template": "1.2.0",
-    "digivito-jgm": "file:",
     "html-react-parser": "^5.2.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -18,9 +17,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -41,8 +38,6 @@
     ]
   },
   "devDependencies": {
-    "@testing-library/react": "^16.2.0",
-    "gh-pages": "^6.3.0"
-  },
-  "homepage": "https://developerdeepak.github.io/digivito-jgm/"
+    "@testing-library/react": "^16.2.0"
+  }
 }
