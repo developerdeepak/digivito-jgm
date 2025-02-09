@@ -10,7 +10,7 @@ const TestimonialCarouselItem = (props) => {
 
     return (
         <div className={itemClasses}>
-            <img src={Icons.TestimonialUser} alt="testimonial user" loading="lazy" />
+            <img src={Icons.TestimonialUser} alt="testimonial user" />
             <div className="user-comment-detail bg-dark">
                 <h4 className="h5 poppins-bold text-primary mb-3 text-center text-lg-start">{props.username}</h4>
                 <p className="mb-0">{HTMLParser.parseHTML(props.comment)}</p>

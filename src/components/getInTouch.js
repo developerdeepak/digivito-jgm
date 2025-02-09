@@ -11,21 +11,21 @@ const GetInTouch = (props) => {
                     <div className="col-12 col-lg-4 bg-white">
                         <div className="tile-content">
                             <a href={"tel:" + props.contact.phone} className="poppins-bold text-decoration-none contact-phone d-flex flex-column align-items-center">
-                                <img src={Icons.PhonePrimary} alt="Phone primary icon" loading="lazy" />
+                                <img src={Icons.PhonePrimary} alt="Phone primary icon" />
                                 <span className="text-black">{props.contact.phone}</span>
                             </a>
                         </div>
                     </div>
                     <div className="col-12 col-lg-4 bg-primary">
                         <div className="tile-content address-tile-content d-flex flex-column align-items-center">
-                            <img src={Icons.LocationBigPrimary} alt="Address primary icon" loading="lazy" />
+                            <img src={Icons.LocationBigPrimary} alt="Address primary icon" />
                             <span className="text-white">{HTMLParser.parseHTML(props.contact.address)}</span>
                         </div>
                     </div>
                     <div className="col-12 col-lg-4 bg-white">
                         <div className="tile-content">
                             <a href={"mailto:" + props.contact.mail} className="text-decoration-none contact-email d-flex flex-column align-items-center">
-                                <img src={Icons.MailPrimary} alt="Mail primary icon" loading="lazy" />
+                                <img src={Icons.MailPrimary} alt="Mail primary icon" />
                                 <span className="text-black">{props.contact.mail}</span>
                                 <button className="btn btn-outline-primary rounded-pill poppins-bold">{props.contact.mailBtnText}</button>
                             </a>

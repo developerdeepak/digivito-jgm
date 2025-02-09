@@ -69,7 +69,7 @@ const BannerSideBySide = (props) => {
             <div className="col">
                 <div className={"row align-items-center " + (props.isBannerRight ? "justify-content-end" : "")}>
                     <div className={"col-12 col-lg-6 banner-container d-none d-lg-block " + (props.isBannerRight ? "pe-0" : "ps-0")}>
-                        <img src={props.BannerImage} className="mw-100" alt="Ready to consult banner" loading="lazy" />
+                        <img src={props.BannerImage} className="mw-100" alt="Ready to consult banner" />
                     </div>
                     <div className="d-lg-none col-12 col-lg-6 d-flex align-items-center py-5 py-lg-0 text-container">
                         <div className="content d-flex flex-column">
@@ -79,7 +79,7 @@ const BannerSideBySide = (props) => {
                                 {bannerDesc}
                                 {bannerDisclaimer}
                             </div>
-                            <img src={props.BannerImage} className="mw-100 mobile-banner" alt="Ready to consult banner" loading="lazy" />
+                            <img src={props.BannerImage} className="mw-100 mobile-banner" alt="Ready to consult banner" />
                             {bannerCTA}
                         </div>
                     </div>

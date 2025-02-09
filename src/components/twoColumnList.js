@@ -8,7 +8,7 @@ const ListColumn = (props) => {
         columnItems.push(
             <li className="list-group-item d-flex justify-content-between align-items-center px-0 bg-transparent" key={index}>
                 {item}
-                <img src={Icons.ArrowRightPrimary} className="mw-100" alt="Right arrow primary icon" loading="lazy" />
+                <img src={Icons.ArrowRightPrimary} className="mw-100" alt="Right arrow primary icon" />
             </li>
         );
     });

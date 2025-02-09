@@ -70,7 +70,7 @@ const WhyChooseUs = (props) => {
                 <div className="col">
                     <div className={"row align-items-center " + (props.isBannerRight ? "justify-content-end" : "")}>
                         <div className={"col-12 banner-container d-none d-lg-block " + (props.isBannerRight ? "pe-0" : "ps-0")}>
-                            <img src={props.BannerImage} className="w-100 desktop-banner" alt="Ready to consult banner" loading="lazy" />
+                            <img src={props.BannerImage} className="w-100 desktop-banner" alt="Ready to consult banner" />
                         </div>
                         <div className="d-lg-none col-12 d-flex align-items-center py-5 py-lg-0 text-container">
                             <div className="content d-flex flex-column">
@@ -82,7 +82,7 @@ const WhyChooseUs = (props) => {
                                 </div>
                                 <div className="row">
                                     <div className="col ps-0">
-                                        <img src={props.BannerImage} className="w-100 mobile-banner" alt="Ready to consult banner" loading="lazy" />
+                                        <img src={props.BannerImage} className="w-100 mobile-banner" alt="Ready to consult banner" />
                                     </div>
                                 </div>
                                 {bannerCTA}

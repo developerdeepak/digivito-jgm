@@ -7,7 +7,7 @@ import Icons from "../images/icons";
 const FooterNavGroupItem = (props) => {
     let itemIcon = '';
     if (props.icon) {
-        itemIcon = <img src={Icons[props.icon]} alt={props.icon + ' icon'} loading="lazy" />
+        itemIcon = <img src={Icons[props.icon]} alt={props.icon + ' icon'} />
     }
 
     if (props.link) {
@@ -31,7 +31,7 @@ const FooterSocialLinks = (props) => {
     let socialLinks = [];
     props.social.forEach((socialItem, index) => {
         if (socialItem.icon && socialItem.icon.length > 0) {
-            let socialItemImage = <img src={Icons[socialItem.icon]} className="social-icon" alt={socialItem.name} loading="lazy" />
+            let socialItemImage = <img src={Icons[socialItem.icon]} className="social-icon" alt={socialItem.name} />
             if (socialItem.link) {
                 socialLinks.push(<a href={socialItem.link} className="nav-link text-white p-0" key={index}>{socialItemImage}</a>);
             } else {
@@ -81,7 +81,7 @@ const PageFooter = () => {
             <div className="row navigation-row bg-secondary">
                 <div className="col mx-auto mw-1600">
                     <div className="logo-container text-center border-bottom border-white d-none d-lg-block">
-                        <img src={Icons.LogoWhite} className="footer-logo" alt="J.G.Miller header logo" loading="lazy" />
+                        <img src={Icons.LogoWhite} className="footer-logo" alt="J.G.Miller header logo" />
                     </div>
                     <div className="footer-nav-container">
                         <div className="row flex-column flex-lg-row">
