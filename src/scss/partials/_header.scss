@@ -1,11 +1,19 @@
 .App-header {
 
     .contact-row .col {
-        gap: 19px;
+        gap: 8px;
         height: 45px;
 
+        @include media-breakpoint-up(sm) {
+            gap: 19px;
+        }
+
         .contact-icon {
-            max-width: 22px;
+            max-width: 14px;
+
+            @include media-breakpoint-up(sm) {
+                max-width: 22px;
+            }
         }
 
         .contact-phone {
@@ -18,7 +26,11 @@
 
         .contact-phone,
         .contact-mail {
-            font-size: 14px;
+            font-size: 12px;
+
+            @include media-breakpoint-up(sm) {
+                font-size: 14px;
+            }
         }
     }
 

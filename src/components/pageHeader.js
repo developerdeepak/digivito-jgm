@@ -26,7 +26,7 @@ const PageHeader = () => {
     return (
         <header className="App-header">
             <div className="row contact-row">
-                <div className="col d-flex justify-content-center justify-content-lg-end align-items-center mx-auto mw-1600">
+                <div className="col d-flex justify-content-end align-items-center mx-auto mw-1600">
                     <a href={"tel:" + AppData.contact.phone} className="poppins-medium text-black text-decoration-none d-flex align-items-center contact-phone">
                         <img src={Icons.PhoneIconBlack} className="phone-icon contact-icon" width="22" height="26" alt="phone icon" />
                         <span>{AppData.contact.phone}</span>

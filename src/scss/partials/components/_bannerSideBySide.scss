@@ -35,7 +35,11 @@
 
     .cta {
         font-size: clamp(1rem, 0.8469rem + 0.6531vw, 1.5rem);
-        width: clamp(21.9375rem, 19.284rem + 7.055vw, 27.75rem);
+        width: 100%;
+
+        @include media-breakpoint-up(md) {
+            width: clamp(21.9375rem, 19.284rem + 7.055vw, 27.75rem);
+        }
     }
 
     .banner-container {
