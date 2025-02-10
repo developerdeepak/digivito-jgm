@@ -1,5 +1,6 @@
 import AboutCEO from './aboutCEO';
 import BannerSideBySide from './bannerSideBySide';
+import Form from './form';
 import GetInTouch from './getInTouch';
 import HeadingAndParagraph from './headingAndParagraph';
 import HeroBanner from './heroBanner';
@@ -14,6 +15,7 @@ import WhyChooseUs from './whyChooseUs';
 const Components = {
     AboutCEO,
     BannerSideBySide,
+    Form,
     GetInTouch,
     HeadingAndParagraph,
     HeroBanner,

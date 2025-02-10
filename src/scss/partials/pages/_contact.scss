@@ -8,12 +8,16 @@
 
     .contact-form-container {
         background-color: $primary-80;
-        padding: 50px;
+        padding: 24px;
 
         @include media-breakpoint-down(md) {
             margin-left: calc(-0.5* var(--bs-gutter-x));
             margin-right: calc(-0.5* var(--bs-gutter-x));
             margin-bottom: -48px;
+        }
+
+        @include media-breakpoint-up(sm) {
+            padding: 50px;
         }
 
         @include media-breakpoint-up(md) {
@@ -22,10 +26,6 @@
 
         @include media-breakpoint-up(lg) {
             max-width: 680px;
-        }
-
-        .form-heading {
-            font-size: 28px;
         }
 
         textarea {

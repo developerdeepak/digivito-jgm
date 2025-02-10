@@ -322,23 +322,50 @@
             },
             "form": {
                 "heading": "Please fill the form and we will contact you",
-                "fields": {
-                    "name": {
-                        "label": "Name"
-                    },
-                    "email": {
-                        "label": "Email"
-                    },
-                    "phone": {
-                        "label": "Phone"
-                    },
-                    "reason": {
-                        "label": "Contact Reason"
-                    },
-                    "shouldKnow": {
-                        "label": "Anything we should know?"
-                    }
-                },
+                "fields": [
+                    [
+                        {
+                            "id": "contactName",
+                            "label": "Name",
+                            "element": "input",
+                            "type": "text",
+                            "additionalClasses": "rounded-pill"
+                        }
+                    ],
+                    [
+                        {
+                            "id": "contactEmail",
+                            "label": "Email",
+                            "element": "input",
+                            "type": "email",
+                            "additionalClasses": "rounded-pill"
+                        },
+                        {
+                            "id": "contactPhone",
+                            "label": "Phone",
+                            "element": "input",
+                            "type": "tel",
+                            "additionalClasses": "rounded-pill"
+                        }
+                    ],
+                    [
+                        {
+                            "id": "contactReason",
+                            "label": "Contact Reason",
+                            "element": "input",
+                            "type": "text",
+                            "additionalClasses": "rounded-pill"
+                        }
+                    ],
+                    [
+                        {
+                            "id": "contactShouldKnow",
+                            "label": "Anything we should know?",
+                            "element": "textarea",
+                            "rows": 3
+                        }
+                    ]
+                ],
                 "btns": {
                     "submit": {
                         "text": "Get In touch"
