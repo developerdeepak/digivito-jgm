@@ -1,28 +1,21 @@
-const InputField = (config) => {
-    return (
-        <input type={config.type} className={"form-control " + (config.additionalClasses ? config.additionalClasses : "")} id={config.id} />
-    );
-};
-
-const TextArea = (config) => {
-    return (
-        <textarea className={"form-control " + (config.additionalClasses ? config.additionalClasses : "")} id={config.id} rows={config.rows || 3}></textarea>
-    );
-};
+import { createElement } from 'react';
 
 const FormColumn = ({ col }) => {
-    let inputField = '';
+    let inputProps = {
+        id: col.id,
+        name: col.name,
+        type: col.type,
+        className: `form-control ${col.additionalClasses}`
+    };
 
-    switch (col.element) {
-        case 'input':
-            inputField = (<InputField {...col} />);
-            break;
-        case 'textarea':
-            inputField = (<TextArea {...col} />);
-            break;
-        default:
-            break;
+    if (col.required) {
+        inputProps.required = col.required
     }
+
+    let inputField = createElement(
+        col.element,
+        inputProps
+    );
 
     return (
         <div className="col mb-3">
@@ -51,6 +44,16 @@ const FormRow = ({ row }) => {
 const Form = (props) => {
     let formHeading = '';
     let formRows = [];
+    const submitForm = (event) => {
+        let formData = {};
+        event.keys().forEach(key => {
+            formData[key] = event.get(key);
+        });
+
+        if (props.handleFormSubmit) {
+            props.handleFormSubmit(formData);
+        }
+    };
 
     if (props.heading && props.heading.length > 0) {
         formHeading = (<h2 className="h3 poppins-semibold mb-3">{props.heading}</h2>);
@@ -63,7 +66,7 @@ const Form = (props) => {
     }
 
     return (
-        <form>
+        <form action={submitForm}>
             {formHeading}
             {formRows}
             <div className="col-12">

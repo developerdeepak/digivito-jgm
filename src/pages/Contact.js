@@ -6,6 +6,10 @@ import BannerImage from '../images/hand-shaking-business.jpg';
 
 const pageSpecificData = AppData.pages.contact;
 
+const handleFormSubmit = (formData) => {
+    console.log(formData);
+}
+
 const Contact = () => {
     const [heroBannerExtraSpace, setHeroBannerExtraSpace] = useState(0);
 
@@ -13,7 +17,7 @@ const Contact = () => {
         <>
             <Components.HeroBanner {...pageSpecificData.heroBanner} HeroImage={HeroBannerImage} setHeroBannerExtraSpace={setHeroBannerExtraSpace}>
                 <div className="contact-form-container text-start">
-                    <Components.Form {...pageSpecificData.form} />
+                    <Components.Form {...pageSpecificData.form} handleFormSubmit={handleFormSubmit} />
                 </div>
             </Components.HeroBanner>
             <Components.TwoColumnList {...pageSpecificData.reachOut} addOnPadding={heroBannerExtraSpace} />

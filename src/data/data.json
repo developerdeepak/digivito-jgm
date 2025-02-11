@@ -326,43 +326,53 @@
                     [
                         {
                             "id": "contactName",
+                            "name": "name",
                             "label": "Name",
                             "element": "input",
                             "type": "text",
-                            "additionalClasses": "rounded-pill"
+                            "additionalClasses": "rounded-pill",
+                            "required": true
                         }
                     ],
                     [
                         {
                             "id": "contactEmail",
+                            "name": "email",
                             "label": "Email",
                             "element": "input",
                             "type": "email",
-                            "additionalClasses": "rounded-pill"
+                            "additionalClasses": "rounded-pill",
+                            "required": true
                         },
                         {
                             "id": "contactPhone",
+                            "name": "phone",
                             "label": "Phone",
                             "element": "input",
                             "type": "tel",
-                            "additionalClasses": "rounded-pill"
+                            "additionalClasses": "rounded-pill",
+                            "required": true
                         }
                     ],
                     [
                         {
                             "id": "contactReason",
+                            "name": "reason",
                             "label": "Contact Reason",
                             "element": "input",
                             "type": "text",
-                            "additionalClasses": "rounded-pill"
+                            "additionalClasses": "rounded-pill",
+                            "required": true
                         }
                     ],
                     [
                         {
                             "id": "contactShouldKnow",
+                            "name": "details",
                             "label": "Anything we should know?",
                             "element": "textarea",
-                            "rows": 3
+                            "rows": 3,
+                            "required": false
                         }
                     ]
                 ],
