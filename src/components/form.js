@@ -44,14 +44,11 @@ const FormRow = ({ row }) => {
 const Form = (props) => {
     let formHeading = '';
     let formRows = [];
-    const submitForm = (event) => {
-        let formData = {};
-        event.keys().forEach(key => {
-            formData[key] = event.get(key);
-        });
 
-        if (props.handleFormSubmit) {
-            props.handleFormSubmit(formData);
+    const handleFormSubmit = (event) => {
+        event.preventDefault();
+        if (props.setFormData) {
+            props.setFormData(Object.fromEntries(new FormData(event.target)));
         }
     };
 
@@ -66,7 +63,7 @@ const Form = (props) => {
     }
 
     return (
-        <form action={submitForm}>
+        <form onSubmit={handleFormSubmit}>
             {formHeading}
             {formRows}
             <div className="col-12">

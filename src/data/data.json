@@ -331,10 +331,7 @@
                             "element": "input",
                             "type": "text",
                             "additionalClasses": "rounded-pill",
-                            "required": true,
-                            "validationErrors": {
-                                "empty": "Please provide your full name"
-                            }
+                            "required": true
                         }
                     ],
                     [
