@@ -5,11 +5,15 @@ const FormColumn = ({ col }) => {
         id: col.id,
         name: col.name,
         type: col.type,
-        className: `form-control ${col.additionalClasses}`
+        className: `form-control ${col.additionalClasses ? col.additionalClasses : ''}`
     };
 
     if (col.required) {
         inputProps.required = col.required
+    }
+
+    if (col.rows) {
+        inputProps.rows = col.rows;
     }
 
     let inputField = createElement(
