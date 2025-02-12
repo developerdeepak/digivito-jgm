@@ -12,7 +12,7 @@ const ComponentSubheading = (props) => {
 const ComponentHeading = (props) => {
     let headingClasses = "mb-0 poppins-bold h2 heading";
 
-    if(props.isDark) {
+    if (props.isDark) {
         headingClasses += " text-white";
     }
 
@@ -26,10 +26,10 @@ const ComponentHeading = (props) => {
 const ComponentDescription = (props) => {
     let descClasses = "mb-0 description";
 
-    if(props.isDark) {
+    if (props.isDark) {
         descClasses += " text-white";
     }
-    
+
     return (
         <p className={descClasses}>
             {HTMLParser.parseHTML(props.description)}
@@ -40,7 +40,7 @@ const ComponentDescription = (props) => {
 const ComponentTile = (props) => {
     let cardClassList = "card rounded-0 tile-card";
 
-    if(props.isDark) {
+    if (props.isDark) {
         cardClassList += " bg-white text-dark";
     } else {
         cardClassList += " bg-dark text-white";
@@ -49,7 +49,7 @@ const ComponentTile = (props) => {
     return (
         <div className="g-col-12 g-col-md-6">
             <div className={cardClassList}>
-                <div className="card-body d-flex justify-content-between align-items-start text-start">
+                <div className="card-body d-flex flex-column-reverse flex-lg-row justify-content-between align-items-center align-items-lg-start text-lg-start p-0">
                     <div className="tile-text-content">
                         <h3 className="card-title poppins-bold text-primary">{HTMLParser.parseHTML(props.title)}</h3>
                         <p className="card-text">{HTMLParser.parseHTML(props.detail)}</p>

@@ -246,12 +246,12 @@
                 "tiles": [
                     {
                         "title": "Wills and Trust",
-                        "detail": "Ensure your assets are distributed <br/>according to your wishes.",
+                        "detail": "Ensure your assets are distributed according to your wishes.",
                         "icon": "WillTrustsPrimary"
                     },
                     {
                         "title": "Power of Attorney",
-                        "detail": "Make sure the right people can make <br/>decisions for you in critical moments.",
+                        "detail": "Make sure the right people can make decisions for you in critical moments.",
                         "icon": "POAPrimary"
                     },
                     {
@@ -261,7 +261,7 @@
                     },
                     {
                         "title": "Trust Funding",
-                        "detail": "Ensure that your trust is properly funded <br/>to avoid probate.",
+                        "detail": "Ensure that your trust is properly funded to avoid probate.",
                         "icon": "TrustFundingPrimary"
                     }
                 ]
@@ -274,22 +274,22 @@
                 "tiles": [
                     {
                         "title": "Business Formation",
-                        "detail": "Whether you’re starting a sole <br/>proprietorship, LLC, or corporation, <br/>we’ll help you get set up the right way.",
+                        "detail": "Whether you’re starting a sole proprietorship, LLC, or corporation, we’ll help you get set up the right way.",
                         "icon": "BusinessFormarionPrimary"
                     },
                     {
                         "title": "Contracts & Agreements",
-                        "detail": "Protect your business with properly drafted <br/>contracts, from employment agreements <br/>to partnership deals.",
+                        "detail": "Protect your business with properly drafted contracts, from employment agreements to partnership deals.",
                         "icon": "ContractsAgreementsPrimary"
                     },
                     {
                         "title": "Mergers & Acquisitions",
-                        "detail": "We provide expert guidance on buying, <br/>selling, and merging businesses.",
+                        "detail": "We provide expert guidance on buying, selling, and merging businesses.",
                         "icon": "MergersAcquisitionsPrimary"
                     },
                     {
                         "title": "Ongoing Counsel",
-                        "detail": "Need legal advice as your business grows? <br/>We’re here to help with strategic support <br/>on an as-needed basis.",
+                        "detail": "Need legal advice as your business grows? We’re here to help with strategic support on an as-needed basis.",
                         "icon": "TrustFundingPrimary"
                     }
                 ]
@@ -331,7 +331,10 @@
                             "element": "input",
                             "type": "text",
                             "additionalClasses": "rounded-pill",
-                            "required": true
+                            "required": true,
+                            "validationErrors": {
+                                "empty": "Please provide your full name"
+                            }
                         }
                     ],
                     [
