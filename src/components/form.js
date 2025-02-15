@@ -1,29 +1,29 @@
 import { createElement } from 'react';
 
-const FormColumn = ({ col }) => {
+const FormColumn = ({ config }) => {
     let inputProps = {
-        id: col.id,
-        name: col.name,
-        type: col.type,
-        className: `form-control ${col.additionalClasses ? col.additionalClasses : ''}`
+        id: config.id,
+        name: config.name,
+        type: config.type,
+        className: `form-control ${config.additionalClasses ? config.additionalClasses : ''}`
     };
 
-    if (col.required) {
-        inputProps.required = col.required
+    if (config.required) {
+        inputProps.required = config.required
     }
 
-    if (col.rows) {
-        inputProps.rows = col.rows;
+    if (config.rows) {
+        inputProps.rows = config.rows;
     }
 
     let inputField = createElement(
-        col.element,
+        config.element,
         inputProps
     );
 
     return (
         <div className="col mb-3">
-            <label htmlFor={col.id} className="form-label">{col.label}</label>
+            <label htmlFor={config.id} className="form-label">{config.label}</label>
             {inputField}
         </div>
     );
@@ -34,7 +34,7 @@ const FormRow = ({ row }) => {
 
     if (row.length > 0) {
         row.forEach((col, index) => {
-            columns.push(<FormColumn col={col} key={index} />);
+            columns.push(<FormColumn config={col} key={index} />);
         });
     }
 

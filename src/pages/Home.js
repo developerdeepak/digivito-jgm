@@ -3,6 +3,7 @@ import AppData from '../data/data.json';
 import HeroBannerImage from '../images/home-hero-banner-lg.jpg';
 import ScheduleFreeConsultationImage from '../images/schedule-free-consultation.jpg';
 import LawHammerBanner from '../images/law-hammer-banner.png';
+import Icons from "../images/icons";
 
 const pageSpecificData = AppData.pages.home;
 const getInTouchData = {
@@ -19,7 +20,7 @@ const Home = () => {
             <Components.HeroBanner {...pageSpecificData.heroBanner} HeroImage={HeroBannerImage} />
             <Components.TwoColumnList {...pageSpecificData.practiceAreas} />
             <Components.BannerSideBySide {...pageSpecificData.scheduleFreeConsultation} BannerImage={ScheduleFreeConsultationImage} />
-            <Components.QuoteCEO />
+            <Components.ImageBanner containerSelector="quote-ceo-comp" images={{ default: Icons.CEOQuoteSm, desktop: Icons.CEOQuoteLg }} altText="CEO Quote message" />
             <Components.WhyChooseUs {...pageSpecificData.whyChooseUs} BannerImage={LawHammerBanner} />
             <Components.Testimonials {...pageSpecificData.testimonials} />
             <Components.GetInTouch {...getInTouchData} />

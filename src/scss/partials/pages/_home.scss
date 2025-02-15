@@ -4,3 +4,15 @@
         margin-bottom: 34px;
     }
 }
+
+.quote-ceo-comp {
+    background-image: url(../../../images/icons/law-statue-icon.svg);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 271px;
+    padding: 30px 0;
+
+    @include media-breakpoint-up(xl) {
+        padding: 87px 0;
+    }
+}

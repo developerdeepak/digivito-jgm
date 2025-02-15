@@ -4,9 +4,9 @@ import Form from './form';
 import GetInTouch from './getInTouch';
 import HeadingAndParagraph from './headingAndParagraph';
 import HeroBanner from './heroBanner';
+import ImageBanner from './imageBanner';
 import PageFooter from './pageFooter';
 import PageHeader from './pageHeader';
-import QuoteCEO from './quoteCEO';
 import Testimonials from './testimonials';
 import TwoColumnList from './twoColumnList';
 import TwoColumnTiles from './twoColumnTiles';
@@ -19,9 +19,9 @@ const Components = {
     GetInTouch,
     HeadingAndParagraph,
     HeroBanner,
+    ImageBanner,
     PageFooter,
     PageHeader,
-    QuoteCEO,
     Testimonials,
     TwoColumnList,
     TwoColumnTiles,
