@@ -90,7 +90,7 @@ const TwoColumnTiles = (props) => {
     }
 
     return (
-        <div className={componentTopContainerClasses}>
+        <div className={componentTopContainerClasses} id={props.id}>
             <div className="col mw-1600 mx-auto text-center d-flex flex-column">
                 {subheading}
                 {heading}

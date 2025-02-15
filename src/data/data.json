@@ -71,10 +71,12 @@
                 "heading": "Services",
                 "items": [
                     {
-                        "name": "Estate Planning"
+                        "name": "Estate Planning",
+                        "link": "/services#estate-planning"
                     },
                     {
-                        "name": "Business Law"
+                        "name": "Business Law",
+                        "link": "/services#business-support"
                     }
                 ]
             },

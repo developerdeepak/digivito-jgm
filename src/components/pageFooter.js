@@ -1,8 +1,21 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 import AppData from '../data/data.json';
 import Helpers from '../helpers';
 import Icons from "../images/icons";
+
+const GetFooterLink = (props) => {
+    if(props.link.includes('#')) {
+        return (
+            <HashLink to={props.link} className="nav-link text-white p-0">{props.name}</HashLink>
+        );
+    } else {
+        return (
+            <Link to={props.link} className="nav-link text-white p-0">{props.name}</Link>
+        );
+    }
+}
 
 const FooterNavGroupItem = (props) => {
     let itemIcon = '';
@@ -14,7 +27,7 @@ const FooterNavGroupItem = (props) => {
         return (
             <li className="nav-item d-flex align-items-start">
                 {itemIcon}
-                <Link to={props.link} className="nav-link text-white p-0">{props.name}</Link>
+                <GetFooterLink {...props} />
             </li>
         );
     } else {

@@ -10,8 +10,8 @@ const Services = () => {
         <>
             <Components.HeroBanner {...pageSpecificData.heroBanner} HeroImage={HeroBannerImage} />
             <Components.HeadingAndParagraph {...pageSpecificData.ourServices} />
-            <Components.TwoColumnTiles {...pageSpecificData.estatePlanning} />
-            <Components.TwoColumnTiles {...pageSpecificData.businessSupport} />
+            <Components.TwoColumnTiles {...pageSpecificData.estatePlanning} id="estate-planning" />
+            <Components.TwoColumnTiles {...pageSpecificData.businessSupport} id="business-support" />
         </>
     );
 }
