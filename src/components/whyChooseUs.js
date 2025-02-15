@@ -25,14 +25,6 @@ const BannerDescription = (props) => {
     );
 };
 
-const BannerDisclaimer = (props) => {
-    return (
-        <p className="mb-0 text-white banner-disclaimer">
-            {HTMLParser.parseHTML(props.disclaimer)}
-        </p>
-    );
-};
-
 const BannerCTA = (props) => {
     return (
         <Link to={props.cta.link} className="btn cta btn-primary text-white rounded-pill poppins-bold">
@@ -42,7 +34,7 @@ const BannerCTA = (props) => {
 }
 
 const WhyChooseUs = (props) => {
-    let bannerSubHeading = '', bannerHeading = '', bannerDesc = '', bannerDisclaimer = '', bannerCTA = '';
+    let bannerSubHeading = '', bannerHeading = '', bannerDesc = '', bannerCTA = '';
 
     if (props.subheading && props.subheading.length > 0) {
         bannerSubHeading = <BannerSubHeading {...props} />;
@@ -54,10 +46,6 @@ const WhyChooseUs = (props) => {
 
     if (props.description && props.description.length > 0) {
         bannerDesc = <BannerDescription {...props} />;
-    }
-
-    if (props.disclaimer && props.disclaimer.length > 0) {
-        bannerDisclaimer = <BannerDisclaimer {...props} />;
     }
 
     if (props.cta && props.cta.link && props.cta.link.length > 0) {
@@ -78,7 +66,6 @@ const WhyChooseUs = (props) => {
                                     {bannerSubHeading}
                                     {bannerHeading}
                                     {bannerDesc}
-                                    {bannerDisclaimer}
                                 </div>
                                 <div className="row">
                                     <div className="col ps-0">
@@ -98,7 +85,6 @@ const WhyChooseUs = (props) => {
                                     {bannerSubHeading}
                                     {bannerHeading}
                                     {bannerDesc}
-                                    {bannerDisclaimer}
                                 </div>
                                 {bannerCTA}
                             </div>

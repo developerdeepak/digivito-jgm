@@ -1,5 +1,10 @@
-import Icons from "../images/icons";
 import HTMLParser from "../helpers/htmlParser";
+
+const CarouselIndicators = (props) => {
+    return (
+        <button type="button" data-bs-target={props.id} data-bs-slide-to={props.index} className={"rounded-circle border-primary " + (props.index === 0 ? 'active' : '')} aria-label={"Slide " + (props.index + 1)}></button>
+    );
+};
 
 const TestimonialCarouselItem = (props) => {
     let itemClasses = "carousel-item text-start";
@@ -10,7 +15,6 @@ const TestimonialCarouselItem = (props) => {
 
     return (
         <div className={itemClasses}>
-            <img src={Icons.TestimonialUser} alt="testimonial user" />
             <div className="user-comment-detail bg-dark">
                 <h4 className="h5 poppins-bold text-primary mb-3 text-center text-lg-start">{props.username}</h4>
                 <p className="mb-0">{HTMLParser.parseHTML(props.comment)}</p>
@@ -21,11 +25,15 @@ const TestimonialCarouselItem = (props) => {
 
 const Testimonials = (props) => {
     let carouselItems = [];
+    let carouselIndicators = [];
 
     if (props.items && props.items.length > 0) {
         props.items.forEach((item, index) => {
             carouselItems.push(
                 <TestimonialCarouselItem {...item} key={index} />
+            );
+            carouselIndicators.push(
+                <CarouselIndicators id="#testimonialsSlider" index={index} key={index} />
             );
         });
     }
@@ -44,9 +52,7 @@ const Testimonials = (props) => {
                                 {carouselItems}
                             </div>
                             <div className="carousel-indicators position-static mb-0 justify-content-lg-start">
-                                <button type="button" data-bs-target="#testimonialsSlider" data-bs-slide-to="0" className="rounded-circle border-primary active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#testimonialsSlider" data-bs-slide-to="1" className="rounded-circle border-primary" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#testimonialsSlider" data-bs-slide-to="2" className="rounded-circle border-primary" aria-label="Slide 3"></button>
+                                {carouselIndicators}
                             </div>
                         </div>
                     </div>

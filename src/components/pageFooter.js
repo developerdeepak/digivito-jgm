@@ -20,7 +20,7 @@ const GetFooterLink = (props) => {
 const FooterNavGroupItem = (props) => {
     let itemIcon = '';
     if (props.icon) {
-        itemIcon = <img src={Icons[props.icon]} alt={props.icon + ' icon'} />
+        itemIcon = <img src={Icons[props.icon]} alt={props.icon + ' icon'} className={props.classNames} />
     }
 
     if (props.link) {

@@ -25,14 +25,6 @@ const BannerDescription = (props) => {
     );
 };
 
-const BannerDisclaimer = (props) => {
-    return (
-        <p className="mb-0 text-white banner-disclaimer">
-            {HTMLParser.parseHTML(props.disclaimer)}
-        </p>
-    );
-};
-
 const BannerCTA = (props) => {
     const ctaProps = props.cta;
 
@@ -54,7 +46,7 @@ const BannerCTA = (props) => {
 }
 
 const BannerSideBySide = (props) => {
-    let bannerSubHeading = '', bannerHeading = '', bannerDesc = '', bannerDisclaimer = '', bannerCTA = '';
+    let bannerSubHeading = '', bannerHeading = '', bannerDesc = '', bannerCTA = '';
 
     if (props.subheading && props.subheading.length > 0) {
         bannerSubHeading = <BannerSubHeading {...props} />;
@@ -66,10 +58,6 @@ const BannerSideBySide = (props) => {
 
     if (props.description && props.description.length > 0) {
         bannerDesc = <BannerDescription {...props} />;
-    }
-
-    if (props.disclaimer && props.disclaimer.length > 0) {
-        bannerDisclaimer = <BannerDisclaimer {...props} />;
     }
 
     if (props.cta) {
@@ -89,7 +77,6 @@ const BannerSideBySide = (props) => {
                                 {bannerSubHeading}
                                 {bannerHeading}
                                 {bannerDesc}
-                                {bannerDisclaimer}
                             </div>
                             <img src={props.BannerImage} className="mw-100 mobile-banner" alt="Ready to consult banner" />
                             {bannerCTA}
@@ -105,7 +92,6 @@ const BannerSideBySide = (props) => {
                                 {bannerSubHeading}
                                 {bannerHeading}
                                 {bannerDesc}
-                                {bannerDisclaimer}
                             </div>
                             {bannerCTA}
                         </div>

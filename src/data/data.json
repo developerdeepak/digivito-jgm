@@ -123,8 +123,10 @@
                 "heading": "Contact Us",
                 "items": [
                     {
-                        "name": "Anywhere via Video Meeting",
-                        "icon": "VideoCallWhite"
+                        "name": "(801) 872-9889",
+                        "link": "tel:(801) 872-9889",
+                        "icon": "PhoneWhite",
+                        "classNames": "phone-icon"
                     },
                     {
                         "name": "jon@jgmillerlaw.com",
@@ -140,7 +142,7 @@
             "heroBanner": {
                 "addOnClass": "home-hero-banner",
                 "heading": "Guiding Your Future,<br/>Securing Your Business",
-                "description": "From estate planning to business law, We provide <br class='d-none d-xl-inline-block' />personalized legal solutions for peace of mind.",
+                "description": "From estate planning to business law, we provide <br class='d-none d-xl-inline-block' />personalized legal solutions for peace of mind.",
                 "cta": {
                     "text": "Book a free consultation",
                     "openPopup": true,
@@ -174,8 +176,7 @@
             "scheduleFreeConsultation": {
                 "subheading": "START YOUR LEGAL JOURNEY TODAY",
                 "heading": "Schedule Your Free <br/>Consultation",
-                "description": "From business growth to family planning, we’re here to help you navigate every legal step. Schedule your complimentary 30-minute consultation today and start planning for your future with confidence.",
-                "disclaimer": "*Disclaimer: The free consultation does not establish an attorney-client relationship. Legal advice is provided only upon engagement of services.",
+                "description": "Whether you’re growing a business or securing your family’s future, we’re here to guide you through every legal step. Schedule your free 30-minute consultation today and plan with confidence.",
                 "cta": {
                     "text": "Contact us",
                     "link": "/contact"
@@ -204,19 +205,24 @@
                     },
                     {
                         "isActive": false,
-                        "username": "Denise R.",
-                        "comment": "“ I hired Jon to update my family trust and to revise two operating agreements for my LLC's. Jon was very professional, courteous, kind, showed integrity and was reasonably priced. Jon gave me some advice on how to handle a problem we had with one of my LLC's, I was very impressed! I was so pleased with his work I referred my sister, brother and mother-in law to him! ”"
+                        "username": "Zack S.",
+                        "comment": "“ Jonathan is a phenomenal attorney. He was incredibly helpful and knowledgeable about making modifications to my LLC, as well as helping to explain the limits and use cases of non-compete agreements etc. Jon had an answer and solution for everything I asked. I’d highly recommend him to any business, and will be using his services in the future. ”"
                     },
                     {
                         "isActive": false,
-                        "username": "Denise R.",
-                        "comment": "“ I hired Jon to update my family trust and to revise two operating agreements for my LLC's. Jon was very professional, courteous, kind, showed integrity and was reasonably priced. Jon gave me some advice on how to handle a problem we had with one of my LLC's, I was very impressed! I was so pleased with his work I referred my sister, brother and mother-in law to him! ”"
+                        "username": "Sherrie H.",
+                        "comment": "“ Jon has been my attorney for more than 2 years now. I truly appreciate all that he does for me regularly and all he has helped me with - whether it be helping me with business formations and advice, or helping me with estate planning. I would strongly recommend Jon as he is fair, honest, affordable, and has integrity - something I have not found common among lawyers. ”"
+                    },
+                    {
+                        "isActive": false,
+                        "username": "Kathy J.",
+                        "comment": "“ After consulting with Jon on an issue I had he not only put my mind at ease, but he also gave me direction and excellent advise on other ideas. Very personable, professional, and superb at what he does. He will definitely be my 'go to' attorney for any future needs. I would highly recommend him to anyone in need of an attorney. ”"
                     }
                 ]
             },
             "getInTouch": {
                 "heading": "Get In Touch",
-                "description": "Problems trying to resolve the conflict between <br class='d-none d-md-inline-block' />the two major realms of Classical physics: Newtonian mechanics.",
+                "description": "Whether you need guidance or just <br class='d-none d-md-inline-block' />have a quick question, I’m here to help. Let’s connect!",
                 "contact": {
                     "mailBtnText": "Get in touch"
                 }
