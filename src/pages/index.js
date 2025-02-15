@@ -1,17 +1,19 @@
-import Layout from './Layout';
+import About from './About';
+import Contact from './Contact';
 import ErrorPage from './NotFound';
 import Home from './Home';
-import Contact from './Contact';
-import About from './About';
+import Layout from './Layout';
 import Services from './Services';
+import Terms from './Terms';
 
 const Pages = {
-    Layout,
+    About,
+    Contact,
     ErrorPage,
     Home,
-    Contact,
-    About,
-    Services
+    Layout,
+    Services,
+    Terms
 };
 
 export default Pages;

@@ -111,7 +111,8 @@
                 "heading": "Links",
                 "items": [
                     {
-                        "name": "Terms of use"
+                        "name": "Terms of use",
+                        "link": "/terms"
                     },
                     {
                         "name": "Privacy Policy"
@@ -405,6 +406,21 @@
                     }
                 ]
             }
+        },
+        "terms": {
+            "heading": "Terms of Service",
+            "sections": [
+                "<p class='text-center'>At <strong>J G Miller Law, PLLC</strong> (“we,” “us,” or “our”), we are committed to protecting your privacy. This Privacy Policy applies to the website <nobr><strong><a href='URL_ORIGIN'>URL_HOST</a></nobr></strong>, which is operated by J G Miller Law, PLLC, and outlines how we collect, use, and protect your personal information.</p><p class='text-end'><strong>Effective Date:</strong> January 10, 2025</p>",
+                "<p><strong>Who We Are:</strong> J G Miller Law, PLLC, is a small law firm specializing in estate planning. Our address is:</p><address class='text-center'>J G Miller Law, PLLC<br/>P.O. Box 234<br/>Bountiful, UT 84011</address><p>For questions, please email us at <nobr><a href='mailto:jon@jgmillerlaw.com'>jon@jgmillerlaw.com</a></nobr>.</p>",
+                "<p><strong>What Information We Collect:</strong> We may collect the following personal information when you interact with our website:</p><ul><li>Your name</li><li>Your email address</li></ul><p>We collect this information when you sign up for consultations, request information, or subscribe to updates.</p>",
+                "<p><strong>How We Use Your Information:</strong> We use the information you provide for the following purposes:</p><ul><li>To contact you regarding consultations or services you've requested</li><li>To send you updates or relevant communications about estate planning</li><li>To improve our services and website</li></ul><p>We do not sell, share, or disclose your personal information to third parties except as necessary to provide our services or comply with legal obligations.</p>",
+                "<p><strong>How We Protect Your Information:</strong> We take appropriate measures to safeguard your personal information from unauthorized access, alteration, or misuse. However, no system is completely secure, and we cannot guarantee absolute security of your information.</p>",
+                "<p><strong>Cookies:</strong> At this time, <strong><a href='URL_ORIGIN'>URL_HOST</a></nobr></strong> does not use cookies or similar tracking technologies to collect information about your browsing activities. Should this change in the future, we will update this Privacy Policy accordingly and notify you as required by law.</p>",
+                "<p><strong>Your Rights:</strong> As a resident of Utah, Arizona, or Texas, you have the right to:</p><ul><li>Request access to the personal information we hold about you</li><li>Request corrections to any inaccurate information</li><li>Request deletion of your information, subject to applicable legal requirements</li></ul><p>To exercise these rights, please contact us at <nobr><a href='mailto:jon@jgmillerlaw.com'>jon@jgmillerlaw.com</a></nobr>.</p>",
+                "<p><strong>Third-Party Services:</strong> We may use third-party providers, such as email services or web hosting platforms, to assist in delivering our services. These providers are contractually obligated to protect your information and use it only for the purposes we specify.</p>",
+                "<p><strong>Updates to This Policy:</strong> We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date. We encourage you to review this policy periodically.</p>",
+                "<p><strong>Contact Information:</strong> If you have any questions or concerns about this Privacy Policy, please contact us:</p><address class='text-center'>J G Miller Law, PLLC<br/>P.O. Box 234<br/>Bountiful, UT 84011<br/>Email: <nobr><a href='mailto:jon@jgmillerlaw.com'>jon@jgmillerlaw.com</a></nobr></address>"
+            ]
         }
     }
 }

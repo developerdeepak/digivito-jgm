@@ -4,6 +4,7 @@ import Form from './form';
 import GetInTouch from './getInTouch';
 import HeadingAndParagraph from './headingAndParagraph';
 import HeroBanner from './heroBanner';
+import HTMLContent from './htmlContent';
 import ImageBanner from './imageBanner';
 import PageFooter from './pageFooter';
 import PageHeader from './pageHeader';
@@ -20,6 +21,7 @@ const Components = {
     GetInTouch,
     HeadingAndParagraph,
     HeroBanner,
+    HTMLContent,
     ImageBanner,
     PageFooter,
     PageHeader,
