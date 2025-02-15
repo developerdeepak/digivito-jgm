@@ -1,7 +1,11 @@
 .App-footer {
 
-    .copyright-text {
+    .copyright-row {
         padding: 24px 0;
+
+        > .col {
+            gap: 16px;
+        }
     }
 
     .navigation-row > .col {

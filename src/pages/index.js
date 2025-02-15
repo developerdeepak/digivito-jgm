@@ -3,6 +3,7 @@ import Contact from './Contact';
 import ErrorPage from './NotFound';
 import Home from './Home';
 import Layout from './Layout';
+import Privacy from './Privacy';
 import Services from './Services';
 import Terms from './Terms';
 
@@ -12,6 +13,7 @@ const Pages = {
     ErrorPage,
     Home,
     Layout,
+    Privacy,
     Services,
     Terms
 };

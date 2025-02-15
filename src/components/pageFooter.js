@@ -113,8 +113,11 @@ const PageFooter = (props) => {
                 </div>
             </div>
             <div className="row copyright-row bg-dark">
-                <div className="col mx-auto mw-1600">
-                    <p className="text-center my-0 copyright-text">
+                <div className="col mx-auto mw-1600 d-flex flex-column flex-lg-row justify-content-between">
+                    <p className="text-center text-lg-end my-0 copyright-text">
+                        {Helpers.HTMLParser.parseHTML(AppData.footer.disclaimer)}
+                    </p>
+                    <p className="text-center text-lg-end my-0 copyright-text">
                         {Helpers.HTMLParser.parseHTML(AppData.footer.copyrightText)}
                     </p>
                 </div>

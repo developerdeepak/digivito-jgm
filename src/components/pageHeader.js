@@ -28,7 +28,7 @@ const HeaderCTA = () => {
 
     if (ctaProps.openPopup) {
         return (
-            <button className="btn btn-primary text-white cta poppins-medium border-0 rounded-pill" data-bs-toggle="modal" data-bs-target={'#' + ctaProps.targetPopup}>
+            <button className="btn btn-primary text-white cta header-cta poppins-medium border-0 rounded-pill" data-bs-toggle="modal" data-bs-target={'#' + ctaProps.targetPopup}>
                 {ctaProps.text}
             </button>
         );

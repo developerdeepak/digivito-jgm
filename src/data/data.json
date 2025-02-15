@@ -34,9 +34,8 @@
         }
     },
     "footer": {
-        "copyrightText1": "Copyright @2024 JGMILLER",
-        "copyrightText2": "All Right Reserved",
         "copyrightText": "Copyright @2024 JGMILLER <nobr>All Right Reserved</nobr>",
+        "disclaimer": "By using this site, you agree to our <nobr><a href='/privacy'>Privacy Policy</a></nobr> and <nobr><a href='/terms'>Terms of Service</a></nobr>.",
         "navigation": [
             {
                 "heading": "Estate Planning and Business Attorney",
@@ -115,7 +114,8 @@
                         "link": "/terms"
                     },
                     {
-                        "name": "Privacy Policy"
+                        "name": "Privacy Policy",
+                        "link": "/privacy"
                     }
                 ]
             },
@@ -410,16 +410,30 @@
         "terms": {
             "heading": "Terms of Service",
             "sections": [
-                "<p class='text-center'>At <strong>J G Miller Law, PLLC</strong> (“we,” “us,” or “our”), we are committed to protecting your privacy. This Privacy Policy applies to the website <nobr><strong><a href='URL_ORIGIN'>URL_HOST</a></nobr></strong>, which is operated by J G Miller Law, PLLC, and outlines how we collect, use, and protect your personal information.</p><p class='text-end'><strong>Effective Date:</strong> January 10, 2025</p>",
+                "<p class='text-center'>At <strong>J G Miller Law, PLLC</strong> (“we,” “us,” or “our”), we are committed to protecting your privacy. This Privacy Policy applies to the website <nobr><strong><a href='URL_ORIGIN'>URL_HOST</a></strong></nobr>, which is operated by J G Miller Law, PLLC, and outlines how we collect, use, and protect your personal information.</p><p class='text-center text-md-end'><strong>Effective Date:</strong> January 10, 2025</p>",
                 "<p><strong>Who We Are:</strong> J G Miller Law, PLLC, is a small law firm specializing in estate planning. Our address is:</p><address class='text-center'>J G Miller Law, PLLC<br/>P.O. Box 234<br/>Bountiful, UT 84011</address><p>For questions, please email us at <nobr><a href='mailto:jon@jgmillerlaw.com'>jon@jgmillerlaw.com</a></nobr>.</p>",
                 "<p><strong>What Information We Collect:</strong> We may collect the following personal information when you interact with our website:</p><ul><li>Your name</li><li>Your email address</li></ul><p>We collect this information when you sign up for consultations, request information, or subscribe to updates.</p>",
                 "<p><strong>How We Use Your Information:</strong> We use the information you provide for the following purposes:</p><ul><li>To contact you regarding consultations or services you've requested</li><li>To send you updates or relevant communications about estate planning</li><li>To improve our services and website</li></ul><p>We do not sell, share, or disclose your personal information to third parties except as necessary to provide our services or comply with legal obligations.</p>",
                 "<p><strong>How We Protect Your Information:</strong> We take appropriate measures to safeguard your personal information from unauthorized access, alteration, or misuse. However, no system is completely secure, and we cannot guarantee absolute security of your information.</p>",
-                "<p><strong>Cookies:</strong> At this time, <strong><a href='URL_ORIGIN'>URL_HOST</a></nobr></strong> does not use cookies or similar tracking technologies to collect information about your browsing activities. Should this change in the future, we will update this Privacy Policy accordingly and notify you as required by law.</p>",
+                "<p><strong>Cookies:</strong> At this time, <nobr><strong><a href='URL_ORIGIN'>URL_HOST</a></strong></nobr> does not use cookies or similar tracking technologies to collect information about your browsing activities. Should this change in the future, we will update this Privacy Policy accordingly and notify you as required by law.</p>",
                 "<p><strong>Your Rights:</strong> As a resident of Utah, Arizona, or Texas, you have the right to:</p><ul><li>Request access to the personal information we hold about you</li><li>Request corrections to any inaccurate information</li><li>Request deletion of your information, subject to applicable legal requirements</li></ul><p>To exercise these rights, please contact us at <nobr><a href='mailto:jon@jgmillerlaw.com'>jon@jgmillerlaw.com</a></nobr>.</p>",
                 "<p><strong>Third-Party Services:</strong> We may use third-party providers, such as email services or web hosting platforms, to assist in delivering our services. These providers are contractually obligated to protect your information and use it only for the purposes we specify.</p>",
                 "<p><strong>Updates to This Policy:</strong> We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date. We encourage you to review this policy periodically.</p>",
                 "<p><strong>Contact Information:</strong> If you have any questions or concerns about this Privacy Policy, please contact us:</p><address class='text-center'>J G Miller Law, PLLC<br/>P.O. Box 234<br/>Bountiful, UT 84011<br/>Email: <nobr><a href='mailto:jon@jgmillerlaw.com'>jon@jgmillerlaw.com</a></nobr></address>"
+            ]
+        },
+        "privacy": {
+            "heading": "Privacy Policy",
+            "sections": [
+                "<p class='text-center'>Welcome to <nobr><strong><a href='URL_ORIGIN'>URL_HOST</a></strong>,</nobr> the official website of J G Miller Law, PLLC. Please read this disclaimer carefully before using our website or contacting us through any form of communication. By using this site, you acknowledge and agree to the terms outlined below.</p><p class='text-center text-md-end'><strong>Effective Date:</strong> January 10, 2025</p>",
+                "<p><strong>No Attorney-Client Relationship:</strong> The materials and information on this website are for general informational purposes only and do not constitute legal advice. Viewing this website, downloading materials, or contacting J G Miller Law, PLLC, through the website does not create an attorney-client relationship. An attorney-client relationship is established only after you have signed a written agreement with J G Miller Law, PLLC.</p><p>If you have specific legal questions or concerns, you should contact a licensed attorney in your jurisdiction for professional legal advice tailored to your situation.</p>",
+                "<p><strong>Jurisdictional Limitations:</strong> Jonathan Miller, the principal attorney at J G Miller Law, PLLC (URL_HOST) is licensed to practice law in <strong>Utah</strong>, <strong>Arizona</strong>, and <strong>Texas</strong>. We provide legal services exclusively to residents of these states.</p><p>If you reside outside of Utah, Arizona, or Texas, we regret that we cannot provide you with legal advice or representation at this time. The information on this website is not intended to solicit clients in any jurisdiction where we are not licensed to practice law.</p>",
+                "<p><strong>No Guarantees:</strong> The outcomes of legal matters vary depending on the specific facts and circumstances of each case. While J G Miller Law, PLLC, strives to provide accurate and useful information, we make no guarantees, warranties, or predictions about the results of any legal representation.</p>",
+                "<p><strong>Third-Party Websites:</strong> This website may contain links to third-party websites for your convenience. J G Miller Law, PLLC, does not control or endorse the content of third-party websites and is not responsible for their privacy practices or accuracy. Visiting third-party websites is at your own discretion and risk.</p>",
+                "<p><strong>Privacy and Confidentiality:</strong> While we welcome your inquiries, please avoid sharing confidential or sensitive information through this website or email until an attorney-client relationship has been established. Unsolicited communications do not create an attorney-client relationship and may not be treated as privileged or confidential.</p>",
+                "<p><strong>Compliance with State and Federal Laws:</strong> This website and its content are governed by the laws of the State of Utah, with additional compliance with applicable laws in Arizona and Texas. By using this website, you agree to be bound by these laws.</p>",
+                "<p><strong>Updates to This Disclaimer:</strong> J G Miller Law, PLLC, reserves the right to update or modify this disclaimer at any time without prior notice. We encourage you to review this page periodically for the most current version.</p>",
+                "<p><strong>Contact Information:</strong> If you have any questions about this disclaimer or your use of this website, please contact us:</p><address class='text-center'>J G Miller Law, PLLC<br/>P.O. Box 234<br/>Bountiful, UT 84011<br/>Email: <nobr><a href='mailto:jon@jgmillerlaw.com'>jon@jgmillerlaw.com</a></nobr></address>"
             ]
         }
     }

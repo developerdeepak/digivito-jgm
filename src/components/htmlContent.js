@@ -14,8 +14,8 @@ const HTMLContent = (props) => {
     const sections = [];
 
     if (props.sections && props.sections.length > 0) {
-        props.sections.forEach(section => {
-            sections.push(<ContentRow section={section} />)
+        props.sections.forEach((section, index) => {
+            sections.push(<ContentRow section={section} key={index} />)
         });
     }
 
