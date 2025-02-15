@@ -15,8 +15,27 @@ const toggleNavOffcanvas = () => {
     document.querySelector('.offcanvas .btn-close').click();
 }
 
-const PageHeader = () => {
+const HeaderCTA = () => {
+    const ctaProps = AppData.header.cta;
 
+    if (ctaProps.link) {
+        return (
+            <Link to={ctaProps.link} className="btn btn-primary text-white cta header-cta poppins-medium border-0 rounded-pill" alt="Book a free consultaion link" onClick={toggleNavOffcanvas}>
+                {ctaProps.text}
+            </Link>
+        );
+    }
+
+    if (ctaProps.openPopup) {
+        return (
+            <button className="btn btn-primary text-white cta poppins-medium border-0 rounded-pill" data-bs-toggle="modal" data-bs-target={'#' + ctaProps.targetPopup}>
+                {ctaProps.text}
+            </button>
+        );
+    }
+}
+
+const PageHeader = () => {
     const NavItemsHTML = [];
 
     AppData.navItems.forEach((item, index) => {
@@ -60,9 +79,7 @@ const PageHeader = () => {
                                 <ul className="navbar-nav justify-content-end flex-grow-1 poppins-regular">
                                     {NavItemsHTML}
                                 </ul>
-                                <Link to={AppData.header.cta.link} className="btn btn-primary text-white cta header-cta poppins-medium border-0 rounded-pill" alt="Book a free consultaion link" onClick={toggleNavOffcanvas}>
-                                    {AppData.header.cta.text}
-                                </Link>
+                                <HeaderCTA />
                             </div>
                         </div>
                     </div>

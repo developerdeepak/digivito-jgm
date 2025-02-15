@@ -63,11 +63,19 @@ class HeroBanner extends Component {
         }
 
         if (this.props.cta) {
-            bannerCTA = (
-                <Link to={this.props.cta.link} className="btn btn-primary text-white cta poppins-medium border-0 rounded-pill" alt="Book a free consultaion link">
-                    {this.props.cta.text}
-                </Link>
-            );
+            if (this.props.cta.openPopup) {
+                bannerCTA = (
+                    <button className="btn btn-primary text-white cta poppins-medium border-0 rounded-pill" data-bs-toggle="modal" data-bs-target={'#' + this.props.cta.targetPopup}>
+                        {this.props.cta.text}
+                    </button>
+                );
+            } else {
+                bannerCTA = (
+                    <Link to={this.props.cta.link} className="btn btn-primary text-white cta poppins-medium border-0 rounded-pill" alt="Book a free consultaion link">
+                        {this.props.cta.text}
+                    </Link>
+                );
+            }
         }
 
         return (

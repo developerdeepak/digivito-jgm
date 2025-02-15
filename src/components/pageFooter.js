@@ -6,7 +6,7 @@ import Helpers from '../helpers';
 import Icons from "../images/icons";
 
 const GetFooterLink = (props) => {
-    if(props.link.includes('#')) {
+    if (props.link.includes('#')) {
         return (
             <HashLink to={props.link} className="nav-link text-white p-0">{props.name}</HashLink>
         );
@@ -30,14 +30,23 @@ const FooterNavGroupItem = (props) => {
                 <GetFooterLink {...props} />
             </li>
         );
-    } else {
+    }
+
+    if (props.openPopup) {
         return (
-            <li className="nav-item d-flex align-items-start text-white">
+            <li className="nav-item d-flex align-items-start">
                 {itemIcon}
-                <p className="m-0">{Helpers.HTMLParser.parseHTML(props.name)}</p>
+                <button className="nav-link text-white text-start p-0" data-bs-toggle="modal" data-bs-target={'#' + props.targetPopup}>{props.name}</button>
             </li>
         );
     }
+
+    return (
+        <li className="nav-item d-flex align-items-start text-white">
+            {itemIcon}
+            <p className="m-0">{Helpers.HTMLParser.parseHTML(props.name)}</p>
+        </li>
+    );
 };
 
 const FooterSocialLinks = (props) => {
@@ -83,7 +92,7 @@ const FooterNavGroup = (props) => {
     );
 }
 
-const PageFooter = () => {
+const PageFooter = (props) => {
     const NavItemsHTML = [];
 
     AppData.footer.navigation.forEach((item, index) => {
@@ -110,6 +119,7 @@ const PageFooter = () => {
                     </p>
                 </div>
             </div>
+            {props.children}
         </footer>
     );
 };

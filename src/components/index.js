@@ -7,6 +7,7 @@ import HeroBanner from './heroBanner';
 import ImageBanner from './imageBanner';
 import PageFooter from './pageFooter';
 import PageHeader from './pageHeader';
+import PopUp from './popup';
 import Testimonials from './testimonials';
 import TwoColumnList from './twoColumnList';
 import TwoColumnTiles from './twoColumnTiles';
@@ -22,6 +23,7 @@ const Components = {
     ImageBanner,
     PageFooter,
     PageHeader,
+    PopUp,
     Testimonials,
     TwoColumnList,
     TwoColumnTiles,

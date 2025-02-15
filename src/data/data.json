@@ -29,7 +29,8 @@
     "header": {
         "cta": {
             "text": "Book a free consultation",
-            "link": "/contact"
+            "openPopup": true,
+            "targetPopup": "bookAppointmentPopup"
         }
     },
     "footer": {
@@ -101,7 +102,8 @@
                     },
                     {
                         "name": "Book Appointment",
-                        "link": "/contact"
+                        "openPopup": true,
+                        "targetPopup": "bookAppointmentPopup"
                     }
                 ]
             },
@@ -140,7 +142,8 @@
                 "description": "From estate planning to business law, We provide <br class='d-none d-xl-inline-block' />personalized legal solutions for peace of mind.",
                 "cta": {
                     "text": "Book a free consultation",
-                    "link": "/contact"
+                    "openPopup": true,
+                    "targetPopup": "bookAppointmentPopup"
                 }
             },
             "practiceAreas": {
@@ -297,7 +300,8 @@
                 "heading": "Ready to get started?<br/>Let’s work together to protect your future!",
                 "cta": {
                     "text": "Book an appointment now",
-                    "link": "/contact"
+                    "openPopup": true,
+                    "targetPopup": "bookAppointmentPopup"
                 },
                 "isBannerRight": true
             }
@@ -375,7 +379,8 @@
                 "heading": "Ready to get started?<br/>Let’s work together to protect your future!",
                 "cta": {
                     "text": "Book an appointment now",
-                    "link": "/contact"
+                    "openPopup": true,
+                    "targetPopup": "bookAppointmentPopup"
                 },
                 "isBannerRight": true
             },

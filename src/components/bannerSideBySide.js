@@ -34,11 +34,23 @@ const BannerDisclaimer = (props) => {
 };
 
 const BannerCTA = (props) => {
-    return (
-        <Link to={props.cta.link} className="btn cta btn-outline-white rounded-pill poppins-bold">
-            {HTMLParser.parseHTML(props.cta.text)}
-        </Link>
-    );
+    const ctaProps = props.cta;
+
+    if (ctaProps.link) {
+        return (
+            <Link to={ctaProps.link} className="btn cta btn-outline-white rounded-pill poppins-bold">
+                {HTMLParser.parseHTML(ctaProps.text)}
+            </Link>
+        );
+    }
+
+    if (ctaProps.openPopup) {
+        return (
+            <button className="btn cta btn-outline-white rounded-pill poppins-bold" data-bs-toggle="modal" data-bs-target={'#' + ctaProps.targetPopup}>
+                {ctaProps.text}
+            </button>
+        );
+    }
 }
 
 const BannerSideBySide = (props) => {
@@ -60,7 +72,7 @@ const BannerSideBySide = (props) => {
         bannerDisclaimer = <BannerDisclaimer {...props} />;
     }
 
-    if (props.cta && props.cta.link && props.cta.link.length > 0) {
+    if (props.cta) {
         bannerCTA = <BannerCTA {...props} />
     }
 
