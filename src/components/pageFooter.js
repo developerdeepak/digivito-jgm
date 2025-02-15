@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 import AppData from '../data/data.json';
-import Helpers from '../helpers';
+import HTMLParser from '../helpers/htmlParser';
 import Icons from "../images/icons";
 
 const GetFooterLink = (props) => {
@@ -44,7 +44,7 @@ const FooterNavGroupItem = (props) => {
     return (
         <li className="nav-item d-flex align-items-start text-white">
             {itemIcon}
-            <p className="m-0">{Helpers.HTMLParser.parseHTML(props.name)}</p>
+            <p className="m-0">{HTMLParser.parseHTML(props.name)}</p>
         </li>
     );
 };
@@ -115,10 +115,10 @@ const PageFooter = (props) => {
             <div className="row copyright-row bg-dark">
                 <div className="col mx-auto mw-1600 d-flex flex-column flex-lg-row justify-content-between">
                     <p className="text-center text-lg-end my-0 copyright-text">
-                        {Helpers.HTMLParser.parseHTML(AppData.footer.disclaimer)}
+                        {HTMLParser.parseHTML(AppData.footer.disclaimer)}
                     </p>
                     <p className="text-center text-lg-end my-0 copyright-text">
-                        {Helpers.HTMLParser.parseHTML(AppData.footer.copyrightText)}
+                        {HTMLParser.parseHTML(AppData.footer.copyrightText)}
                     </p>
                 </div>
             </div>

@@ -1,11 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
 import Pages from "./pages";
+import Components from "./components";
 
 function App() {
   return (
     <div className="container-fluid poppins App">
       <BrowserRouter>
+        <Components.PageScrollToTop />
         <Routes>
           <Route path="/" element={<Pages.Layout />}>
             <Route index element={<Pages.Home />} />
