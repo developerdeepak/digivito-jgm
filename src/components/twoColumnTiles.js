@@ -38,17 +38,9 @@ const ComponentDescription = (props) => {
 };
 
 const ComponentTile = (props) => {
-    let cardClassList = "card rounded-0 tile-card";
-
-    if (props.isDark) {
-        cardClassList += " bg-white text-dark";
-    } else {
-        cardClassList += " bg-dark text-white";
-    }
-
     return (
-        <div className="g-col-12 g-col-md-6">
-            <div className={cardClassList}>
+        <div className={"g-col-12 g-col-md-6 " + (props.isDark ? 'bg-white' : 'bg-dark')}>
+            <div className={"card rounded-0 tile-card border-0 " + (props.isDark ? 'bg-white text-dark' : 'bg-dark text-white')}>
                 <div className="card-body d-flex flex-column-reverse flex-lg-row justify-content-between align-items-center align-items-lg-start text-lg-start p-0">
                     <div className="tile-text-content">
                         <h3 className="card-title poppins-bold text-primary">{HTMLParser.parseHTML(props.title)}</h3>

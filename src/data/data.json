@@ -230,7 +230,7 @@
         },
         "services": {
             "heroBanner": {
-                "heading": "Our Services Simplifying<br/>Your Legal Needs"
+                "heading": "Strategic Planning for <br/>Your Life & Business"
             },
             "ourServices": {
                 "heading": "Our Services",
@@ -244,7 +244,7 @@
                 "tiles": [
                     {
                         "title": "Trusts",
-                        "detail": "Ensure that your trust is properly funded to avoid probate.",
+                        "detail": "Protect your assets and ensure a smooth transfer to beneficiaries while avoiding probate.",
                         "icon": "TrustFundingPrimary"
                     },
                     {
@@ -253,7 +253,7 @@
                         "icon": "WillTrustsPrimary"
                     },
                     {
-                        "title": "Power of Attorney",
+                        "title": "Powers of Attorney",
                         "detail": "Make sure the right people can make decisions for you in critical moments.",
                         "icon": "POAPrimary"
                     },
