@@ -321,6 +321,9 @@
             },
             "form": {
                 "heading": "Please fill the form and we will contact you",
+                "actionURL": "https://refundairtickets.com/email.service/api/form/submit",
+                "method": "post",
+                "isAjax": true,
                 "fields": [
                     [
                         {
@@ -380,6 +383,12 @@
                     "submit": {
                         "text": "Get In touch"
                     }
+                }
+            },
+            "formSubmit": {
+                "heading": "Response send successfully!",
+                "resetBtn": {
+                    "text": "Have another query?"
                 }
             },
             "getStarted": {

@@ -19,8 +19,6 @@ const HTMLContent = (props) => {
         });
     }
 
-    console.log()
-
     return (
         <div className="my-5 html-content-page">
             <h1 className="h1 poppins-bold text-center mb-5">{props.heading}</h1>

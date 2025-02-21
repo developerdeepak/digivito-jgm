@@ -33,6 +33,10 @@ class HeroBanner extends Component {
         }
     }
 
+    componentDidUpdate() {
+        this.setHeroBannerExtraSpace();
+    }
+
     componentDidMount() {
         this.setHeroBannerExtraSpace();
         window.addEventListener('resize', PerformanceEnhancer.debounce(this.setHeroBannerExtraSpace, 200));
