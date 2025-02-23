@@ -3,10 +3,12 @@ import Components from "../components";
 import AppData from '../data/data.json';
 import HeroBannerImage from '../images/contact-hero-banner-lg.jpg';
 import BannerImage from '../images/hand-shaking-business.jpg';
+import HTMLParser from '../helpers/htmlParser';
 
 const pageSpecificData = AppData.pages.contact;
 
 const sendEmail = (emailData) => {
+    emailData.subjectLine = HTMLParser.parseDynamicString(pageSpecificData.sendEmail.subjectLine, emailData.name);
     const requestOptions = {
         method: pageSpecificData.form.method,
         headers: { 'Content-Type': 'application/json' },

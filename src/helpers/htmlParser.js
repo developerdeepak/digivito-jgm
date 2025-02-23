@@ -1,5 +1,19 @@
 import parse from 'html-react-parser';
 
+function parseDynamicString() {
+    let key = '';
+    if (arguments && arguments.length > 0) {
+        const args = Object.values(arguments);
+        key = args.shift();
+        const options = [...args];
+
+        options.forEach((option, index) => {
+            key = key.replace('{' + index + '}', option);
+        });
+    }
+    return key;
+}
+
 function replacePlaceholders(string) {
     let formattedString = string;
 
@@ -22,7 +36,8 @@ function parseHTML(htmlString) {
 
 const HTMLParser = {
     replacePlaceholders: replacePlaceholders,
-    parseHTML: parseHTML
+    parseHTML: parseHTML,
+    parseDynamicString: parseDynamicString
 };
 
 export default HTMLParser;
