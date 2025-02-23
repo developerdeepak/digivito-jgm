@@ -386,7 +386,7 @@
                 }
             },
             "formSubmit": {
-                "heading": "Response send successfully!",
+                "heading": "Thank you for your information;<br/>we will be in touch with you shortly.",
                 "resetBtn": {
                     "text": "Have another query?"
                 }

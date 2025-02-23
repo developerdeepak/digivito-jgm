@@ -7,12 +7,14 @@ import HTMLParser from '../helpers/htmlParser';
 
 const pageSpecificData = AppData.pages.contact;
 
-const sendEmail = (emailData) => {
-    emailData.subjectLine = HTMLParser.parseDynamicString(pageSpecificData.sendEmail.subjectLine, emailData.name);
+const sendEmail = (formData) => {
     const requestOptions = {
         method: pageSpecificData.form.method,
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(emailData)
+        body: JSON.stringify({
+            ...formData,
+            subjectLine: HTMLParser.parseDynamicString(pageSpecificData.sendEmail.subjectLine, formData.name)
+        })
     };
     return fetch(pageSpecificData.form.actionURL, requestOptions).then(response => {
         return new Promise((resolve, reject) => {
@@ -30,7 +32,7 @@ const sendEmail = (emailData) => {
 const ContactFormSubmitted = (props) => {
     return (
         <div className="form-success-container">
-            <p className="h4 mb-4">{pageSpecificData.formSubmit.heading}</p>
+            <p className="h4 mb-4">{HTMLParser.parseHTML(pageSpecificData.formSubmit.heading)}</p>
             <button type="submit" className="btn btn-sm btn-outline-light rounded-pill py-2 px-4 fs-6" onClick={props.resetForm}>{pageSpecificData.formSubmit.resetBtn.text}</button>
         </div>
     );
