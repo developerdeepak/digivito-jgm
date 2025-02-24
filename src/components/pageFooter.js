@@ -103,7 +103,7 @@ const PageFooter = (props) => {
             <div className="row navigation-row bg-secondary">
                 <div className="col mx-auto mw-1600">
                     <div className="logo-container text-center border-bottom border-white d-none d-lg-block">
-                        <img src={Icons.LogoWhite} className="footer-logo" alt="J.G.Miller header logo" />
+                        <img src={Icons.LogoWhite} width="270" height="74" className="footer-logo" alt="J.G.Miller header logo" />
                     </div>
                     <div className="footer-nav-container">
                         <div className="row flex-column flex-lg-row">
