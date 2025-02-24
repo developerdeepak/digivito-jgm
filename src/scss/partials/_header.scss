@@ -1,5 +1,4 @@
 .App-header {
-
     .contact-row .col {
         gap: 8px;
         height: 45px;
@@ -56,20 +55,15 @@
         box-shadow: none;
     }
 
-    .header-logo {
-        @include media-breakpoint-down(lg) {
-            width: 205px;
-        }
-    }
-
     .header-cta {
         padding: 12px 22px;
     }
 
     .offcanvas.offcanvas-end {
         @include media-breakpoint-down(lg) {
-            width: calc(100% - 50px);
+            width: calc(100% - 24px);
             max-width: var(--bs-offcanvas-width);
+            top: 45px;
         }
     }
 

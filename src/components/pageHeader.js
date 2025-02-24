@@ -72,7 +72,7 @@ const PageHeader = () => {
                         </button>
                         <div className="offcanvas offcanvas-end border-start-0 text-bg-dark" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                             <div className="offcanvas-header border-bottom">
-                                <img src={Icons.LogoPrimary} className="header-logo" alt="J.G.Miller header logo" />
+                                <img src={Icons.LogoPrimary} width="164" height="44" className="header-logo" alt="J.G.Miller header logo" />
                                 <button type="button" className="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
                             <div className="offcanvas-body align-items-center">
