@@ -26,3 +26,15 @@
 .mw-1024 {
     max-width: 1024px;
 }
+
+.position {
+    @include media-breakpoint-up(md) {
+        &-md-absolute {
+            position: absolute;
+        }
+
+        &-md-relative {
+            position: relative;
+        }
+    }
+}

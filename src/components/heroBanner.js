@@ -50,7 +50,8 @@ class HeroBanner extends Component {
         let bannerHeading = '';
         let bannerDesc = '';
         let bannerCTA = '';
-        let bannerClasses = 'row align-items-center position-relative hero-banner';
+        let bannerClasses = 'row align-items-center hero-banner';
+        let contentClasses = 'col mw-1600 mx-auto text-white banner-content';
 
         if (this.props.heading && this.props.heading.length > 0) {
             bannerHeading = HTMLParser.parseHTML(this.props.heading);
@@ -64,6 +65,10 @@ class HeroBanner extends Component {
 
         if (this.props.addOnClass && this.props.addOnClass.length > 0) {
             bannerClasses += " " + this.props.addOnClass;
+        }
+
+        if (this.props.contentClasses && this.props.contentClasses.length > 0) {
+            contentClasses += " " + this.props.contentClasses;
         }
 
         if (this.props.cta) {
@@ -84,8 +89,13 @@ class HeroBanner extends Component {
 
         return (
             <div className={bannerClasses} ref={this.heroBannerRef}>
-                <img src={this.props.HeroImage} className="mw-100 p-0" alt="Hero banner" onLoad={this.setHeroBannerExtraSpace} loading="eager" />
-                <div className="col mw-1600 mx-auto text-white banner-content">
+                <picture className="p-0">
+                    <source media="(min-width:1024px)" srcSet={this.props.HeroImageLg || this.props.HeroImageMd || this.props.HeroImageSm || this.props.HeroImage} />
+                    <source media="(min-width:767px)" srcSet={this.props.HeroImageMd || this.props.HeroImageSm || this.props.HeroImage} />
+                    <source media="(min-width:540px)" srcSet={this.props.HeroImageSm || this.props.HeroImage} />
+                    <img src={this.props.HeroImage} alt="Hero banner" className="mw-100" onLoad={this.setHeroBannerExtraSpace} loading="eager" />
+                </picture>
+                <div className={contentClasses}>
                     <h1 className="poppins-bold h2 m-0 banner-heading">{bannerHeading}</h1>
                     {bannerDesc}
                     {bannerCTA}
